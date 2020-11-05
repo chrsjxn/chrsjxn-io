@@ -8,7 +8,7 @@
   }
 
   li {
-    list-style: "👋 ";
+    list-style: '👋 ';
     list-style-position: outside;
   }
 </style>
