@@ -17,6 +17,8 @@
   router.start()
 </script>
 
+<svelte:component this={page} {params} />
+
 <style>
   :global(body) {
     --primary-color: darkslategray;
@@ -24,8 +26,23 @@
 
     color: var(--primary-color);
     font-family: Proxima Nova, sans-serif;
-    padding: 0;
+	padding: 0;
+	
+	width: 100%;
+	height: 100%;
+  }
+
+  :global(a) {
+	color: var(--accent-color);
+	text-decoration: none;
+  }
+
+  :global(a):hover {
+	filter: brightness(85%);
+	text-decoration: underline;
+  }
+
+  :global(a):visited {
+    filter: brightness(85%);
   }
 </style>
-
-<svelte:component this={page} {params} />

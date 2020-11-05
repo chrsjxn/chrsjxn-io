@@ -6,15 +6,6 @@
 
     padding: 16px 0;
   }
-
-  a {
-    color: var(--accent-color);
-  }
-
-  a:hover,
-  a:visited {
-    filter: brightness(85%);
-  }
 </style>
 
 <nav>

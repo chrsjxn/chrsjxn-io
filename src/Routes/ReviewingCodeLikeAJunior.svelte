@@ -6,7 +6,8 @@
 
 <style>
   h2 {
-    clear: both;
+    font-size: 20pt;
+    line-height: 28pt;
   }
 </style>
 
