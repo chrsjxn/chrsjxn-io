@@ -1,5 +1,6 @@
 <script>
   import About from './Routes/About.svelte'
+  import Error404 from './Routes/404.svelte'
   import Home from './Routes/Home.svelte'
   import ReviewingCodeLikeAJunior from './Routes/ReviewingCodeLikeAJunior.svelte'
   import router from 'page'
@@ -13,6 +14,7 @@
     () => (page = ReviewingCodeLikeAJunior)
   )
   router('/about', () => (page = About))
+  router('*', () => (page = Error404))
 
   router.start()
 </script>
