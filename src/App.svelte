@@ -10,8 +10,12 @@
 
   router('/', () => (page = Home))
   router(
-    '/reviewing-code-like-a-junior-engineer',
+    '/code-review/reviewing-code-like-a-junior-engineer',
     () => (page = ReviewingCodeLikeAJunior)
+  )
+  router.redirect(
+    '/code-review',
+    '/code-review/reviewing-code-like-a-junior-engineer'
   )
   router('/about', () => (page = About))
   router('*', () => (page = Error404))
@@ -23,6 +27,7 @@
   :global(body) {
     --primary-color: darkslategray;
     --accent-color: crimson;
+    --background-color: hsl(40, 1%, 99%);
 
     color: var(--primary-color);
     font-family: Proxima Nova, sans-serif;
@@ -30,6 +35,8 @@
 
     width: 100%;
     height: 100%;
+
+    background-color: var(--background-color);
   }
 
   :global(a) {
