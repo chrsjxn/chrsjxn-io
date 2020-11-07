@@ -27,7 +27,17 @@
   <p>I believe diverse voices improve products, teams, and the world.</p>
   <h2>Find me elsewhere:</h2>
   <ul>
-    <li><a href="https://github.com/chrsjxn">github</a></li>
-    <li><a href="https://twitter.com/c_jackson_js">twitter</a></li>
+    <li>
+      <a
+        href="https://github.com/chrsjxn"
+        target="_blank"
+        rel="noopener noreferrer">github (↗️)</a>
+    </li>
+    <li>
+      <a
+        href="https://twitter.com/c_jackson_js"
+        target="_blank"
+        rel="noopener noreferrer">twitter (↗️)</a>
+    </li>
   </ul>
 </Layout>

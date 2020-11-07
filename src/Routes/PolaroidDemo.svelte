@@ -88,7 +88,8 @@
 
   <p>
     Credit to Una Kravets for inspiration on the polaroid effects. Check out her
-    <a href="https://una.im/lomo/">CSS lomography</a>
+    <a href="https://una.im/lomo/" target="_blank" rel="noopener noreferrer">CSS
+      lomography (↗️)</a>
     post for more!
   </p>
 
@@ -99,7 +100,9 @@
     <code>img</code>
     tag. It renders a lightly processed version of an image, using CSS
     <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">filters</a>
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+      target="_blank"
+      rel="noopener noreferrer">filters (↗️)</a>
     to make the image look more vintage.
   </p>
   <p>
@@ -164,7 +167,8 @@
   <p>
     If you'd like to play around with the code, check it out on the
     <a
-      href="https://svelte.dev/repl/c3eed60a7dd34ad3a94a670747f85341?version=3.29.4">svelte
-      repl</a>!
+      href="https://svelte.dev/repl/c3eed60a7dd34ad3a94a670747f85341?version=3.29.4"
+      target="_blank"
+      rel="noopener noreferrer">svelte repl (↗️)</a>!
   </p>
 </Layout>
