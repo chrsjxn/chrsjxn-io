@@ -10,6 +10,7 @@
 </style>
 
 <Layout>
+  <h1>Writing</h1>
   <h2>Code Reviews</h2>
   <ul>
     <li>
