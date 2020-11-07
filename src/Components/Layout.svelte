@@ -1,4 +1,5 @@
 <script>
+  import Footer from './Footer.svelte'
   import Navigation from './Navigation.svelte'
 </script>
 
@@ -10,6 +11,7 @@
   .center-content {
     margin: auto;
     width: clamp(20ch, 75%, 80ch);
+    padding-bottom: 60px;
   }
 </style>
 
@@ -17,5 +19,6 @@
   <div class="center-content">
     <Navigation />
     <slot />
+    <Footer />
   </div>
 </main>

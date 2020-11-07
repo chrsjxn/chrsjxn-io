@@ -4,6 +4,7 @@
   import Home from './Routes/Home.svelte'
   import ReviewingCodeLikeAJunior from './Routes/ReviewingCodeLikeAJunior.svelte'
   import router from 'page'
+  import PolaroidDemo from './Routes/PolaroidDemo.svelte'
 
   let page
   let params
@@ -18,6 +19,8 @@
     '/code-review/reviewing-code-like-a-junior-engineer'
   )
   router('/about', () => (page = About))
+  router('/components/polaroid', () => (page = PolaroidDemo))
+  router.redirect('/components', '/components/polaroid')
   router('*', () => (page = Error404))
 
   router.start()
@@ -33,7 +36,6 @@
     font-family: Proxima Nova, sans-serif;
     padding: 0;
 
-    width: 100%;
     height: 100%;
 
     background-color: var(--background-color);
