@@ -14,7 +14,6 @@
 <Layout>
   <BlogPost>
     <div slot="title">Reviewing Code like a Junior Engineer</div>
-    <div slot="byline">Chris Jackson</div>
     <div slot="content">
       <p>
         I've met a lot of engineers who don't feel comfortable offering feedback

@@ -10,14 +10,8 @@
   let params
 
   router('/', () => (page = Home))
-  router(
-    '/code-review/reviewing-code-like-a-junior-engineer',
-    () => (page = ReviewingCodeLikeAJunior)
-  )
-  router.redirect(
-    '/code-review',
-    '/code-review/reviewing-code-like-a-junior-engineer'
-  )
+  router('/code-review/like-a-junior', () => (page = ReviewingCodeLikeAJunior))
+  router.redirect('/code-review', '/code-review/like-a-junior')
   router('/about', () => (page = About))
   router('/components/polaroid', () => (page = PolaroidDemo))
   router.redirect('/components', '/components/polaroid')

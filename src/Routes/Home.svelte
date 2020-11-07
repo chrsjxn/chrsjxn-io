@@ -20,8 +20,7 @@
   <h2>Code Reviews</h2>
   <ul>
     <li class="post">
-      <a href="/code-review/reviewing-code-like-a-junior-engineer">Reviewing
-        Code like a Junior Engineer</a>
+      <a href="/code-review/like-a-junior">Reviewing Code like a Junior Engineer</a>
     </li>
   </ul>
   <h1>Component Demos</h1>
