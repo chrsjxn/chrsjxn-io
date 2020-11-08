@@ -19,6 +19,9 @@
   <h1>
     <slot name="title" />
   </h1>
+  <div class="date">
+    <slot name="date" />
+  </div>
   <div class="content">
     <slot name="content" />
   </div>

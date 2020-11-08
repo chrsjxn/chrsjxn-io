@@ -9,11 +9,22 @@
     font-size: 20pt;
     line-height: 28pt;
   }
+
+  .meme-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .meme {
+    margin: auto;
+    max-width: 100%;
+  }
 </style>
 
 <Layout>
   <BlogPost>
     <div slot="title">Reviewing Code like a Junior Engineer</div>
+    <div slot="date">November 5, 2020</div>
     <div slot="content">
       <p>
         I've met a lot of engineers who don't feel comfortable offering feedback
@@ -75,6 +86,13 @@
           responsibilities and larger projects, it takes me a lot longer to
           revisit code that I wrote before.
         </p>
+        <div class="meme-container">
+          <img
+            src="/images/code-last-month.png"
+            alt="Meme with Thanos not recognizing his code from last month"
+            class="meme" />
+        </div>
+        <p>(I had this meme saved, but now I don't know where it came from!)</p>
       </Aside>
       <h2>3. Ask questions, especially about why</h2>
       <p>

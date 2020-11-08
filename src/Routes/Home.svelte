@@ -7,11 +7,11 @@
     list-style-position: outside;
   }
   li.post {
-    list-style: '📓 ';
+    list-style-type: '📓 ';
   }
 
   li.component {
-    list-style: '⚙️ ';
+    list-style-type: '⚙️ ';
   }
 </style>
 
