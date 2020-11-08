@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
+    justify-content: center;
     margin-bottom: 20px;
   }
 
