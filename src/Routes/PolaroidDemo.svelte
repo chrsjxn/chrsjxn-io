@@ -17,14 +17,17 @@
 
   const cssExample = `
 .vignette::after {
+    /* Empty content to show the overlay */
     content: '';
 
+    /* Position over the image, and match its dimensions */
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
 
+    /* Add colors with a partially transparent gradient */
     background: radial-gradient(
         circle,
         hsla(36, 76%, 60%, 20%) 60%,
