@@ -27,16 +27,16 @@ try {
 export const theme = writable(localStorageTheme || themes[1])
 
 export const cycleTheme = () =>
-  theme.update((currentTheme) => {
-    const newTheme = nextTheme(currentTheme)
+  theme.update((currentTheme) => nextTheme(currentTheme))
 
-    // Preserve theme to local storage, if allowed
-    try {
-      window.localStorage.setItem('theme', JSON.stringify(newTheme))
-    } catch (e) {
-      // eslint-disable-next-line no-console
-      console.log('Local Storage access denied. Theme not persisted.')
-    }
+theme.subscribe((theme) => {
+  document.getElementById('body').className = theme.name
 
-    return newTheme
-  })
+  // Preserve theme to local storage, if allowed
+  try {
+    window.localStorage.setItem('theme', JSON.stringify(theme))
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.log('Local Storage access denied. Theme not persisted.')
+  }
+})
