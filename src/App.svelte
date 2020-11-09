@@ -5,6 +5,7 @@
   import ReviewingCodeLikeAJunior from './Routes/ReviewingCodeLikeAJunior.svelte'
   import router from 'page'
   import PolaroidDemo from './Routes/PolaroidDemo.svelte'
+  import { theme } from './Stores/theme'
 
   let page
   let params
@@ -20,34 +21,6 @@
   router.start()
 </script>
 
-<style>
-  :global(body) {
-    --primary-color: darkslategray;
-    --accent-color: crimson;
-    --background-color: hsl(40, 1%, 99%);
-
-    color: var(--primary-color);
-    font-family: Proxima Nova, sans-serif;
-    padding: 0;
-
-    height: 100%;
-
-    background-color: var(--background-color);
-  }
-
-  :global(a) {
-    color: var(--accent-color);
-    text-decoration: none;
-  }
-
-  :global(a):hover {
-    filter: brightness(85%);
-    text-decoration: underline;
-  }
-
-  :global(a):visited {
-    filter: brightness(85%);
-  }
-</style>
-
-<svelte:component this={page} {params} />
+<div class="root {$theme.name}">
+  <svelte:component this={page} {params} theme={$theme} />
+</div>

@@ -1,3 +1,7 @@
+<script>
+  import ThemePicker from './ThemePicker.svelte'
+</script>
+
 <style>
   nav {
     display: flex;
@@ -10,5 +14,8 @@
 
 <nav>
   <div class="left-nav"><a href="/">Home</a></div>
-  <div class="right-nav"><a href="/about">About</a></div>
+  <div class="right-nav">
+    <a href="/about">About</a>
+    <ThemePicker />
+  </div>
 </nav>

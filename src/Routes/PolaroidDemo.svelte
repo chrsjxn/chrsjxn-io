@@ -2,9 +2,11 @@
   import Layout from '../Components/Layout.svelte'
   import Polaroid from '../Components/Polaroid.svelte'
 
+  import { theme } from '../Stores/theme'
+
   import { Highlight, HighlightSvelte } from 'svelte-highlight'
   import { css } from 'svelte-highlight/languages'
-  import { github } from 'svelte-highlight/styles'
+  import { a11yLight, a11yDark } from 'svelte-highlight/styles'
 
   const svelteExample = `
 <Polaroid
@@ -57,7 +59,7 @@
 </style>
 
 <svelte:head>
-  {@html github}
+  {@html $theme.name === 'new' ? a11yDark : a11yLight}
 </svelte:head>
 <Layout>
   <h1>Polaroid Demo</h1>
