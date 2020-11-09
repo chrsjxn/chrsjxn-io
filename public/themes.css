@@ -31,10 +31,5 @@ a {
 }
 
 a:hover {
-    filter: brightness(85%);
     text-decoration: underline;
-}
-
-a:visited {
-    filter: brightness(85%);
 }
