@@ -21,6 +21,4 @@
   router.start()
 </script>
 
-<div class="root {$theme.name}">
-  <svelte:component this={page} {params} theme={$theme} />
-</div>
+<svelte:component this={page} {params} theme={$theme} />
