@@ -24,7 +24,7 @@ try {
   console.log('Failed to load theme from local storage')
 }
 
-export const theme = writable(localStorageTheme || themes[0])
+export const theme = writable(localStorageTheme || themes[1])
 
 export const cycleTheme = () =>
   theme.update((currentTheme) => {
