@@ -28,7 +28,8 @@
     </Polaroid>
   </div>
   <p>
-    I am a senior web engineer, working on building up my full stack skills.
+    I am a senior web engineer, working on building a broader skill set: full
+    stack, dev ops, writing.
   </p>
   <p>
     I am a prolific code reviewer. I think a good code review practice helps the
