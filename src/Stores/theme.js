@@ -16,6 +16,10 @@ export const nextTheme = (theme) => {
   return themes[(index + 1) % themes.length]
 }
 
+const osPreference = window.matchMedia('(prefers-color-scheme: dark)').matches
+  ? themes[0]
+  : themes[1]
+
 let localStorageTheme
 try {
   localStorageTheme = JSON.parse(window.localStorage.getItem('theme'))
@@ -24,7 +28,7 @@ try {
   console.log('Failed to load theme from local storage')
 }
 
-export const theme = writable(localStorageTheme || themes[1])
+export const theme = writable(localStorageTheme || osPreference || themes[1])
 
 export const cycleTheme = () =>
   theme.update((currentTheme) => nextTheme(currentTheme))

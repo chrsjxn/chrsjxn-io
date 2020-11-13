@@ -6,16 +6,16 @@
   import router from 'page'
   import PolaroidDemo from './Routes/PolaroidDemo.svelte'
   import { theme } from './Stores/theme'
+  import ThreeTipsReview from './Routes/ThreeTipsReview.svelte'
 
   let page
   let params
 
   router('/', () => (page = Home))
   router('/code-review/like-a-junior', () => (page = ReviewingCodeLikeAJunior))
-  router.redirect('/code-review', '/code-review/like-a-junior')
+  router('/code-review/three-tips', () => (page = ThreeTipsReview))
   router('/about', () => (page = About))
   router('/components/polaroid', () => (page = PolaroidDemo))
-  router.redirect('/components', '/components/polaroid')
   router('*', () => (page = Error404))
 
   router.start()

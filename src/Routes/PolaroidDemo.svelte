@@ -62,7 +62,7 @@
   {@html $theme.name === 'new' ? a11yDark : a11yLight}
 </svelte:head>
 <Layout>
-  <h1>Polaroid Demo</h1>
+  <h1>Polaroid demo</h1>
   <div class="demo-container">
     <div>
       <Polaroid src="/images/raven.jpg" alt="Raven" effect="drama">

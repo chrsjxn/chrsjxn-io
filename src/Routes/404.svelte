@@ -4,5 +4,5 @@
 
 <Layout>
   <h1>Oops!</h1>
-  <p>We can't find that page you're looking for!</p>
+  <p>I can't find that page you're looking for!</p>
 </Layout>
