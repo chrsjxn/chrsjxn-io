@@ -24,6 +24,10 @@
     font-size: 10pt;
     text-align: end;
   }
+
+  .review-comment {
+    font-style: italic;
+  }
 </style>
 
 <Layout>
@@ -130,8 +134,8 @@
       </p>
       <p>
         You don't have to write a novel, but even a little explanation helps.
-        For example, `This boolean logic was tough for me to follow. Can you
-        split it into a few utility functions?`
+        For example, "<span class="review-comment">This boolean logic was tough
+          for me to follow. Can you split it into a few utility functions?</span>"
       </p>
       <h2>What's next?</h2>
 
