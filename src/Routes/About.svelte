@@ -8,10 +8,6 @@
     font-size: 14pt;
   }
 
-  .links {
-    font-size: 14pt;
-  }
-
   .polaroid-wrapper {
     transform: rotate(1deg);
   }
