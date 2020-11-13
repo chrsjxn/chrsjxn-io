@@ -23,6 +23,9 @@
       <a href="/code-review/three-tips">Three tips to be a better code reviewer
         today</a>
     </li>
+    <li class="post">
+      <a href="/code-review/like-a-junior">Reviewing code like a junior engineer</a>
+    </li>
   </ul>
   <h1>Component Demos</h1>
   <ul>

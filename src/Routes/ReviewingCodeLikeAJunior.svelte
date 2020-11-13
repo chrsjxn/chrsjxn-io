@@ -23,8 +23,8 @@
 
 <Layout>
   <BlogPost>
-    <div slot="title">Reviewing Code like a Junior Engineer</div>
-    <div slot="date">(⚠️ - Needs editing)</div>
+    <div slot="title">Reviewing code like a junior engineer</div>
+    <div slot="date">11/05/2020</div>
     <div slot="content">
       <p>
         I've met a lot of engineers who don't feel comfortable offering feedback

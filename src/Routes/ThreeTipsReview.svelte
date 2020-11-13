@@ -89,7 +89,7 @@
       <div class="meme-container">
         <img
           class="meme"
-          src="https://i.redd.it/5z3kspwmpkbz.jpg"
+          src="/images/spidermanMeme.jpg"
           alt="git blame as a spiderman looking at spiderman meme" />
         <a
           target="_blank"
@@ -119,10 +119,7 @@
         about how you give your feedback, not about what feedback you give. And
         it's much simpler.
       </p>
-      <p>
-        When you give feedback during a code review, explain why! And be
-        specific.
-      </p>
+      <p>When you give feedback during a code review, explain why!</p>
       <p>
         If you're an expert, code review is a tool to teach other engineers.
         Making suggestions and explaining why is how you do that.
