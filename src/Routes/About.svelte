@@ -18,7 +18,8 @@
   <div class="polaroid-wrapper">
     <Polaroid
       src="/images/githubProfile.jpg"
-      alt="self portrait, github profile pic">
+      alt="self portrait, github profile pic"
+      disableFilter>
       Hello!
     </Polaroid>
   </div>

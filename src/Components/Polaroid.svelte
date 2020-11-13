@@ -2,6 +2,7 @@
   export let src = ''
   export let alt = 'polaroid'
   export let effect = ''
+  export let disableFilter = false
 
   const classNames = `polaroid-img ${effect}`
 </script>
@@ -30,6 +31,10 @@
     object-fit: cover;
 
     filter: blur(0.5px) contrast(105%) brightness(105%);
+  }
+
+  img.disableFilter {
+    filter: none;
   }
 
   .polaroid-img {
@@ -85,7 +90,7 @@
 </style>
 
 <div class="polaroid">
-  <div class={classNames}><img {src} {alt} /></div>
+  <div class={classNames}><img {src} {alt} class:disableFilter /></div>
   <div class="caption">
     <slot />
   </div>
