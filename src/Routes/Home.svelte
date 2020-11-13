@@ -5,6 +5,7 @@
 <style>
   li {
     list-style-position: outside;
+    line-height: 2em;
   }
   li.post {
     list-style-type: '📓 ';

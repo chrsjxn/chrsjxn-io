@@ -8,9 +8,8 @@
     font-size: 14pt;
   }
 
-  li {
-    list-style: '👋 ';
-    list-style-position: outside;
+  .links {
+    font-size: 14pt;
   }
 
   .polaroid-wrapper {
@@ -36,19 +35,16 @@
     whole team learn and stay connected.
   </p>
   <p>I believe diverse voices improve products, teams, and the world.</p>
-  <h2>Find me elsewhere:</h2>
-  <ul>
-    <li>
-      <a
-        href="https://github.com/chrsjxn"
-        target="_blank"
-        rel="noopener noreferrer">github (↗️)</a>
-    </li>
-    <li>
-      <a
-        href="https://twitter.com/c_jackson_js"
-        target="_blank"
-        rel="noopener noreferrer">twitter (↗️)</a>
-    </li>
-  </ul>
+  <p>
+    Find me elsewhere:
+    <a
+      href="https://github.com/chrsjxn"
+      target="_blank"
+      rel="noopener noreferrer">github (↗️)</a>
+    -
+    <a
+      href="https://twitter.com/c_jackson_js"
+      target="_blank"
+      rel="noopener noreferrer">twitter (↗️)</a>
+  </p>
 </Layout>
