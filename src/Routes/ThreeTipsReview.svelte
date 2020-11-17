@@ -93,7 +93,7 @@
       <div class="meme-container">
         <img
           class="meme"
-          src="/images/spidermanMeme.jpg"
+          src="/__img_path__/spidermanMeme.jpg"
           alt="git blame as a spiderman looking at spiderman meme" />
         <a
           target="_blank"

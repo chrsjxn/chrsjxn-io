@@ -10,7 +10,7 @@
 
   const svelteExample = `
 <Polaroid
-    src="/images/profile.jpg"
+    src="/__img_path__/profile.jpg"
     alt="Developer self portrait"
     effect="drama">
     SF 11/01/2020
@@ -65,18 +65,18 @@
   <h1>Polaroid demo</h1>
   <div class="demo-container">
     <div>
-      <Polaroid src="/images/raven.jpg" alt="Raven" effect="drama">
+      <Polaroid src="/__img_path__/raven.jpg" alt="Raven" effect="drama">
         Yellowstone 08/31/2015
       </Polaroid>
     </div>
     <div style="transform: rotate(1deg);">
-      <Polaroid src="/images/gull.jpg" alt="Gull" effect="vignette">
+      <Polaroid src="/__img_path__/gull.jpg" alt="Gull" effect="vignette">
         Marin 03/26/2016
       </Polaroid>
     </div>
     <div style="transform: rotate(-2deg);">
       <Polaroid
-        src="/images/profile.jpg"
+        src="/__img_path__/profile.jpg"
         alt="Developer self portrait"
         effect="drama">
         SF 11/01/2020
@@ -84,7 +84,7 @@
     </div>
     <div style="transform: rotate(5deg);">
       <Polaroid
-        src="/images/orange.jpg"
+        src="/__img_path__/orange.jpg"
         alt="SF with orange sky due to wildfire smoke"
         effect="vignette">
         SF 09/09/2020

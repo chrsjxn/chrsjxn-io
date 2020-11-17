@@ -17,7 +17,7 @@
   <h1>Chris Jackson <span class="pronouns">(he/him)</span></h1>
   <div class="polaroid-wrapper">
     <Polaroid
-      src="/images/githubProfile.jpg"
+      src="/__img_path__/githubProfile.jpg"
       alt="self portrait, github profile pic"
       disableFilter>
       Hello!

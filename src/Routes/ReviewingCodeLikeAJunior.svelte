@@ -88,7 +88,7 @@
         </p>
         <div class="meme-container">
           <img
-            src="/images/code-last-month.png"
+            src="/__img_path__/code-last-month.png"
             alt="Meme with Thanos not recognizing his code from last month"
             class="meme" />
         </div>
