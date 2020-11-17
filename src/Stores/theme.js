@@ -44,7 +44,7 @@ theme.subscribe((theme) => {
   document.getElementById('body').className = theme.name
 })
 
-prefersDarkMode.addEventListener('change', (e) => {
+prefersDarkMode.addListener((e) => {
   const newOsPreference = e.matches ? themes[0] : themes[1]
 
   let localStorageTheme = undefined
