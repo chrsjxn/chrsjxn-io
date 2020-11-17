@@ -1,5 +1,10 @@
 <script>
-  import { theme, cycleTheme } from '../Stores/theme'
+  import { theme, cycleTheme, nextTheme } from '../Stores/theme'
+
+  const cycleAndPersistTheme = () => {
+    window.localStorage.setItem('theme', nextTheme($theme).name)
+    cycleTheme()
+  }
 </script>
 
 <style>
@@ -9,4 +14,6 @@
   }
 </style>
 
-<button on:click={cycleTheme} aria-label="Toggle theme">{$theme.icon}</button>
+<button
+  on:click={cycleAndPersistTheme}
+  aria-label="Toggle theme">{$theme.icon}</button>

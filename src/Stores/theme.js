@@ -16,13 +16,20 @@ export const nextTheme = (theme) => {
   return themes[(index + 1) % themes.length]
 }
 
-const osPreference = window.matchMedia('(prefers-color-scheme: dark)').matches
-  ? themes[0]
-  : themes[1]
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
 
-let localStorageTheme
+const osPreference = prefersDarkMode.matches ? themes[0] : themes[1]
+
+let localStorageTheme = undefined
 try {
-  localStorageTheme = JSON.parse(window.localStorage.getItem('theme'))
+  switch (window.localStorage.getItem('theme')) {
+    case 'new':
+      localStorageTheme = themes[0]
+      break
+    case 'full':
+      localStorageTheme = themes[1]
+      break
+  }
 } catch (e) {
   //eslint-disable-next-line no-console
   console.log('Failed to load theme from local storage')
@@ -35,12 +42,25 @@ export const cycleTheme = () =>
 
 theme.subscribe((theme) => {
   document.getElementById('body').className = theme.name
+})
 
-  // Preserve theme to local storage, if allowed
+prefersDarkMode.addEventListener('change', (e) => {
+  const newOsPreference = e.matches ? themes[0] : themes[1]
+
+  let localStorageTheme = undefined
   try {
-    window.localStorage.setItem('theme', JSON.stringify(theme))
+    switch (window.localStorage.getItem('theme')) {
+      case 'new':
+        localStorageTheme = themes[0]
+        break
+      case 'full':
+        localStorageTheme = themes[1]
+        break
+    }
   } catch (e) {
-    // eslint-disable-next-line no-console
-    console.log('Local Storage access denied. Theme not persisted.')
+    //eslint-disable-next-line no-console
+    console.log('Failed to load theme from local storage')
   }
+
+  theme.set(localStorageTheme || newOsPreference || themes[1])
 })
