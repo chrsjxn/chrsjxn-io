@@ -149,7 +149,7 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     <a
       href="https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7"
       rel="noreferrer noopener"
-      target="_blank">on the Stelve REPL (↗️)</a>!
+      target="_blank">on the Svelte REPL (↗️)</a>!
   </p>
   <h2>Caveats</h2>
   <p>
