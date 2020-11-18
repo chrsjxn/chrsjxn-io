@@ -3,15 +3,20 @@
 
 <style>
   h1 {
-    font-size: 24pt;
-    line-height: 36pt;
+    font-size: 36pt;
+    line-height: 40pt;
     margin: 0;
     margin-top: 16px;
   }
 
   .content {
     font-size: 14pt;
-    line-height: 22pt;
+    line-height: 24pt;
+  }
+
+  .content :global(h2) {
+    font-size: 24pt;
+    line-height: 30pt;
   }
 </style>
 

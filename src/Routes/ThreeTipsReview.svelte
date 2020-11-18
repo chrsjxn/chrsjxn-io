@@ -4,11 +4,6 @@
 </script>
 
 <style>
-  h2 {
-    font-size: 20pt;
-    line-height: 28pt;
-  }
-
   .meme-container {
     display: flex;
     justify-content: center;

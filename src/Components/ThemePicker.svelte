@@ -1,8 +1,14 @@
 <script>
-  import { theme, cycleTheme, nextTheme } from '../Stores/theme'
+  import {
+    theme,
+    cycleTheme,
+    nextTheme,
+    removeOSThemeListener,
+  } from '../Stores/theme'
 
   const cycleAndPersistTheme = () => {
     window.localStorage.setItem('theme', nextTheme($theme).name)
+    removeOSThemeListener()
     cycleTheme()
   }
 </script>

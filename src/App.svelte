@@ -7,6 +7,7 @@
   import PolaroidDemo from './Routes/PolaroidDemo.svelte'
   import { theme } from './Stores/theme'
   import ThreeTipsReview from './Routes/ThreeTipsReview.svelte'
+  import ThemePickerDemo from './Routes/ThemePickerDemo.svelte'
 
   let page
   let params
@@ -16,6 +17,7 @@
   router('/code-review/three-tips', () => (page = ThreeTipsReview))
   router('/about', () => (page = About))
   router('/components/polaroid', () => (page = PolaroidDemo))
+  router('/components/theme-store', () => (page = ThemePickerDemo))
   router('*', () => (page = Error404))
 
   router.start()

@@ -44,23 +44,15 @@ theme.subscribe((theme) => {
   document.getElementById('body').className = theme.name
 })
 
-prefersDarkMode.addListener((e) => {
+const osThemeListener = (e) => {
   const newOsPreference = e.matches ? themes[0] : themes[1]
 
-  let localStorageTheme = undefined
-  try {
-    switch (window.localStorage.getItem('theme')) {
-      case 'new':
-        localStorageTheme = themes[0]
-        break
-      case 'full':
-        localStorageTheme = themes[1]
-        break
-    }
-  } catch (e) {
-    //eslint-disable-next-line no-console
-    console.log('Failed to load theme from local storage')
-  }
-
   theme.set(localStorageTheme || newOsPreference || themes[1])
-})
+}
+
+if (localStorageTheme === undefined) {
+  prefersDarkMode.addListener(osThemeListener)
+}
+
+export const removeOSThemeListener = () =>
+  prefersDarkMode.removeListener(osThemeListener)
