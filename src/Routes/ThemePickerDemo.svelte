@@ -5,7 +5,10 @@
 
   import { Highlight } from 'svelte-highlight'
   import { css, javascript } from 'svelte-highlight/languages'
-  import { a11yLight, a11yDark } from 'svelte-highlight/styles'
+  import {
+    atelierCaveLight as light,
+    atelierCaveDark as dark,
+  } from 'svelte-highlight/styles'
 
   const mediaQueryExample = `
 @media (prefers-color-scheme: dark) {
@@ -71,7 +74,7 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
 </style>
 
 <svelte:head>
-  {@html $theme.name === 'new' ? a11yDark : a11yLight}
+  {@html $theme.name === 'new' ? dark : light}
 </svelte:head>
 <Layout>
   <h1>Building a theme store with Svelte</h1>

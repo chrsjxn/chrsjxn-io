@@ -6,7 +6,10 @@
 
   import { Highlight, HighlightSvelte } from 'svelte-highlight'
   import { css } from 'svelte-highlight/languages'
-  import { a11yLight, a11yDark } from 'svelte-highlight/styles'
+  import {
+    atelierCaveLight as light,
+    atelierCaveDark as dark,
+  } from 'svelte-highlight/styles'
 
   const svelteExample = `
 <Polaroid
@@ -59,7 +62,7 @@
 </style>
 
 <svelte:head>
-  {@html $theme.name === 'new' ? a11yDark : a11yLight}
+  {@html $theme.name === 'new' ? dark : light}
 </svelte:head>
 <Layout>
   <h1>Polaroid demo</h1>
