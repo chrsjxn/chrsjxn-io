@@ -28,7 +28,7 @@
       <a href="/code-review/like-a-junior">Reviewing code like a junior engineer</a>
     </li>
   </ul>
-  <h1>Web Technology</h1>
+  <h2>Web Technology</h2>
   <ul>
     <li class="component">
       <a href="/components/theme-store">Building a theme store with Svelte</a>
