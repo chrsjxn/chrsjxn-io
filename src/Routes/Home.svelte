@@ -31,7 +31,8 @@
   <h2>Web Technology</h2>
   <ul>
     <li class="component">
-      <a href="/components/theme-store">Building a theme store with Svelte</a>
+      <a href="/components/theme-store">Building a simple theme store with
+        Svelte</a>
     </li>
     <li class="component"><a href="/components/polaroid">Polaroid demo</a></li>
   </ul>

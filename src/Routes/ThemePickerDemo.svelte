@@ -77,7 +77,7 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
   {@html $theme.name === 'new' ? dark : light}
 </svelte:head>
 <Layout>
-  <h1>Building a theme store with Svelte</h1>
+  <h1>Building a simple theme store with Svelte</h1>
   <div class="date">11/18/2020</div>
   <p>
     Dark mode has been gaining in popularity over the past few years, and now
