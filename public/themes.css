@@ -16,8 +16,8 @@ body {
 }
 
 .full {
-    --primary-color: darkslategray;
-    --accent-color: crimson;
+    --primary-color: rgb(11, 22, 33);
+    --accent-color: blueviolet;
     --background-color: hsl(40, 1%, 99%);
 }
 
