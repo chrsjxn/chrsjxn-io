@@ -10,10 +10,10 @@ body {
 }
 
 .new {
-    --background-color: rgb(11, 22, 33);
-    --accent-color: deeppink;
-    --accent-color-2: deeppink;
-    --primary-color: hsl(40, 1%, 99%);
+    --background-color: hsl(230, 100%, 5%);
+    --accent-color: hsl(285, 100%, 65%);
+    --accent-color-2: hsl(310, 100%, 55%);
+    --primary-color: hsl(230, 100%, 95%);
 }
 
 .full {
