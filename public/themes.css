@@ -17,10 +17,10 @@ body {
 }
 
 .full {
-    --primary-color: hsl(110, 10%, 10%);
+    --primary-color: hsl(110, 10%, 5%);
     --accent-color: hsl(35, 100%, 35%);
     --accent-color-2: hsl(10, 100%, 35%);
-    --background-color: hsl(100, 10%, 90%);
+    --background-color: hsl(100, 10%, 95%);
 }
 
 a {
