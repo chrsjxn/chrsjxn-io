@@ -62,6 +62,10 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     line-height: 28pt;
   }
 
+  .date {
+    line-height: 20pt;
+  }
+
   p {
     font-size: 14pt;
     line-height: 24pt;

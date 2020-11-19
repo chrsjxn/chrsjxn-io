@@ -9,6 +9,10 @@
     margin-top: 16px;
   }
 
+  .date {
+    line-height: 20pt;
+  }
+
   .content {
     font-size: 14pt;
     line-height: 24pt;
