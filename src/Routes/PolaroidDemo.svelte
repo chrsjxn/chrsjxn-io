@@ -51,8 +51,10 @@
     margin-bottom: 20px;
   }
 
-  code {
+  p code {
     font-size: 14pt;
+    color: var(--accent-color);
+    font-weight: bold;
   }
 
   p {

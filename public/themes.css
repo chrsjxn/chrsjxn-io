@@ -12,18 +12,21 @@ body {
 .new {
     --background-color: rgb(11, 22, 33);
     --accent-color: deeppink;
+    --accent-color-2: deeppink;
     --primary-color: hsl(40, 1%, 99%);
 }
 
 .full {
-    --primary-color: rgb(11, 22, 33);
-    --accent-color: blueviolet;
-    --background-color: hsl(40, 1%, 99%);
+    --primary-color: hsl(110, 10%, 10%);
+    --accent-color: hsl(35, 100%, 35%);
+    --accent-color-2: hsl(10, 100%, 35%);
+    --background-color: hsl(100, 10%, 90%);
 }
 
 a {
-    color: var(--accent-color);
+    color: var(--accent-color-2);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {

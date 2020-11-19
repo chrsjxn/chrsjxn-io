@@ -5,10 +5,7 @@
 
   import { Highlight } from 'svelte-highlight'
   import { css, javascript } from 'svelte-highlight/languages'
-  import {
-    atelierCaveLight as light,
-    atelierCaveDark as dark,
-  } from 'svelte-highlight/styles'
+  import { github as light, dark } from 'svelte-highlight/styles'
 
   const mediaQueryExample = `
 @media (prefers-color-scheme: dark) {
@@ -57,6 +54,7 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     margin: 0;
     margin-top: 16px;
   }
+
   h2 {
     font-size: 20pt;
     line-height: 28pt;
@@ -74,6 +72,10 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
   p code {
     color: var(--accent-color);
     font-weight: bold;
+  }
+
+  a code {
+    color: var(--accent-color-2);
   }
 </style>
 
