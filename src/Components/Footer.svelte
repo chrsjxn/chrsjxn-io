@@ -1,4 +1,6 @@
 <script>
+  import Link from './Link.svelte'
+
   const currentYear = new Date().getFullYear()
 </script>
 
@@ -23,15 +25,19 @@
     © Chris Jackson
     {currentYear}
     -
-    <a
+    <Link
       href="https://github.com/chrsjxn/chrsjxn-io"
-      target="_blank"
-      rel="noopener noreferrer">src</a>
+      external
+      externalIndicator={false}>
+      src
+    </Link>
     -
-    <a
+    <Link
       href="https://twitter.com/c_jackson_js"
-      target="_blank"
-      rel="noopener noreferrer">twitter</a>
+      external
+      externalIndicator={false}>
+      twitter
+    </Link>
     - Be kind!
   </div>
 </div>

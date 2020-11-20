@@ -1,5 +1,5 @@
 <script>
-  import Layout from '../Components/Layout.svelte'
+  import { Layout, Link } from '../Components'
 
   import { theme } from '../Stores/theme'
 
@@ -73,10 +73,6 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     color: var(--accent-color);
     font-weight: bold;
   }
-
-  a code {
-    color: var(--accent-color-2);
-  }
 </style>
 
 <svelte:head>
@@ -114,11 +110,11 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
   </p>
   <p>
     JavaScript supports executing any media query with
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia"
-      rel="noreferrer noopener"
-      target="_blank"><code>window.matchMedia</code>
-      (↗️)</a>. The call returns a
+    <Link
+      external
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia">
+      <code>window.matchMedia</code>
+    </Link>. The call returns a
     <code>MediaQueryList</code>
     object that supports two features we'll need when we build the Svelte store.
   </p>
@@ -152,10 +148,11 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
   <p>
     Putting all of this together, we have a simple theme store that responds to
     OS theme changes quickly! If you want to see a demo, you can check it out
-    <a
-      href="https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7"
-      rel="noreferrer noopener"
-      target="_blank">on the Svelte REPL (↗️)</a>!
+    <Link
+      external
+      href="https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7">
+      on the Svelte REPL
+    </Link>!
   </p>
   <h2>Caveats</h2>
   <p>
@@ -167,10 +164,10 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     However, nearly all browsers support
     <code>matchMedia</code>, so they should fall back to whichever theme you
     picked as the default. For full details, see
-    <a
-      href="https://caniuse.com/prefers-color-scheme"
-      rel="noreferrer noopener"
-      target="_blank">Can I use prefers-color-scheme? (↗️)</a>.
+
+    <Link href="https://caniuse.com/prefers-color-scheme" external>
+      Can I use prefers-color-scheme?
+    </Link>.
   </p>
   <p>
     And if you enable some privacy settings, like
@@ -178,10 +175,10 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     in Firefox, this media query will default to the
     <code>light</code>
     theme. For more details here, see
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
-      rel="noreferrer noopener"
-      target="_blank">prefers-color-scheme on MDN (↗️)</a>.
+    <Link
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">
+      prefers-color-scheme on MDN
+    </Link>.
   </p>
   <h2>Next steps!</h2>
   <p>

@@ -1,7 +1,5 @@
 <script>
-  import Layout from '../Components/Layout.svelte'
-  import BlogPost from '../Components/BlogPost.svelte'
-  import Aside from '../Components/Aside.svelte'
+  import { Aside, BlogPost, Layout } from '../Components'
 </script>
 
 <style>

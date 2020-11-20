@@ -1,5 +1,6 @@
 <script>
   import ThemePicker from './ThemePicker.svelte'
+  import Link from './Link.svelte'
 </script>
 
 <style>
@@ -13,9 +14,11 @@
 </style>
 
 <nav>
-  <div class="left-nav"><a href="/">Home</a></div>
+  <div class="left-nav">
+    <Link href="/">Home</Link>
+  </div>
   <div class="right-nav">
-    <a href="/about">About</a>
+    <Link href="/about">About</Link>
     <ThemePicker />
   </div>
 </nav>

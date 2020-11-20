@@ -22,13 +22,3 @@ body {
     --accent-color-2: hsl(10, 100%, 35%);
     --background-color: hsl(100, 10%, 95%);
 }
-
-a {
-    color: var(--accent-color-2);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}

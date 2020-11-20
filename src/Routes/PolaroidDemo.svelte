@@ -1,6 +1,5 @@
 <script>
-  import Layout from '../Components/Layout.svelte'
-  import Polaroid from '../Components/Polaroid.svelte'
+  import { Layout, Link, Polaroid } from '../Components'
 
   import { theme } from '../Stores/theme'
 
@@ -99,8 +98,7 @@
 
   <p>
     Credit to Una Kravets for inspiration on the polaroid effects. Check out her
-    <a href="https://una.im/lomo/" target="_blank" rel="noopener noreferrer">CSS
-      lomography (↗️)</a>
+    <Link href="https://una.im/lomo/" external>CSS lomography</Link>
     post for more!
   </p>
 
@@ -110,10 +108,11 @@
     This Polaroid component is a quick abstraction around an
     <code>img</code>
     tag. It renders a lightly processed version of an image, using CSS
-    <a
+    <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
-      target="_blank"
-      rel="noopener noreferrer">filters (↗️)</a>
+      external>
+      filters
+    </Link>
     to make the image look more vintage.
   </p>
   <p>
@@ -177,9 +176,10 @@
   <h3>Want to tinker?</h3>
   <p>
     If you'd like to play around with the code, check it out on the
-    <a
+    <Link
       href="https://svelte.dev/repl/c3eed60a7dd34ad3a94a670747f85341?version=3.29.4"
-      target="_blank"
-      rel="noopener noreferrer">svelte repl (↗️)</a>!
+      external>
+      svelte repl
+    </Link>!
   </p>
 </Layout>

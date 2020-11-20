@@ -1,6 +1,5 @@
 <script>
-  import Layout from '../Components/Layout.svelte'
-  import Polaroid from '../Components/Polaroid.svelte'
+  import { Layout, Link, Polaroid } from '../Components'
 </script>
 
 <style>
@@ -34,14 +33,8 @@
   <p>I believe diverse voices improve products, teams, and the world.</p>
   <p>
     Find me elsewhere:
-    <a
-      href="https://github.com/chrsjxn"
-      target="_blank"
-      rel="noopener noreferrer">github (↗️)</a>
+    <Link href="https://github.com/chrsjxn" external>github</Link>
     -
-    <a
-      href="https://twitter.com/c_jackson_js"
-      target="_blank"
-      rel="noopener noreferrer">twitter (↗️)</a>
+    <Link href="https://twitter.com/c_jackson_js" external>twitter</Link>
   </p>
 </Layout>

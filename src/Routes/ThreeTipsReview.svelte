@@ -1,6 +1,5 @@
 <script>
-  import Layout from '../Components/Layout.svelte'
-  import BlogPost from '../Components/BlogPost.svelte'
+  import { Layout, Link, BlogPost } from '../Components'
 </script>
 
 <style>
@@ -15,7 +14,7 @@
     max-width: 100%;
   }
 
-  .meme-container a {
+  .meme-container :global(a) {
     font-size: 10pt;
     text-align: end;
   }
@@ -90,11 +89,11 @@
           class="meme"
           src="/__img_path__/spidermanMeme.jpg"
           alt="git blame as a spiderman looking at spiderman meme" />
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.reddit.com/r/ProgrammerHumor/comments/6p9syt/the_problem_with_git_blame/">/r/ProgrammerHumor
-          (↗️)</a>
+        <Link
+          external
+          href="https://www.reddit.com/r/ProgrammerHumor/comments/6p9syt/the_problem_with_git_blame/">
+          /r/ProgrammerHumor
+        </Link>
       </div>
       <p>
         Thankfully, code review is a similar experience. As a reviewer, you're
