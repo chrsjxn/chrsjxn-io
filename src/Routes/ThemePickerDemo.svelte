@@ -73,6 +73,10 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     color: var(--accent-color);
     font-weight: bold;
   }
+
+  .link-code {
+    color: var(--accent-color-2);
+  }
 </style>
 
 <svelte:head>
@@ -113,7 +117,7 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
     <Link
       external
       href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia">
-      <code>window.matchMedia</code>
+      <code class="link-code">window.matchMedia</code>
     </Link>. The call returns a
     <code>MediaQueryList</code>
     object that supports two features we'll need when we build the Svelte store.

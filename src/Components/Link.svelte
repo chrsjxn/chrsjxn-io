@@ -14,10 +14,6 @@
   a:hover {
     text-decoration: underline;
   }
-
-  a :global(code) {
-    color: var(--accent-color);
-  }
 </style>
 
 <a

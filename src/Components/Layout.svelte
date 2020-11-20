@@ -15,10 +15,10 @@
   }
 </style>
 
-<main>
-  <div class="center-content">
-    <Navigation />
+<div class="center-content">
+  <Navigation />
+  <main>
     <slot />
-    <Footer />
-  </div>
-</main>
+  </main>
+  <Footer />
+</div>
