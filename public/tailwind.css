@@ -29154,9 +29154,14 @@ p {
   margin-bottom: 1rem;
 }
 
-pre code {
+pre {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
   font-size: 0.875rem;
   line-height: 1.25rem;
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 li {

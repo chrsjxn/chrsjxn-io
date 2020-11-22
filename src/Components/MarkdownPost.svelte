@@ -1,6 +1,6 @@
 <script>
   import hljs from 'highlight.js'
-  import 'highlight.js/styles/github.css'
+  import 'highlight.js/styles/a11y-dark.css'
   import MarkdownIt from 'markdown-it'
   import Layout from './Layout.svelte'
 

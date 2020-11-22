@@ -1,9 +1,6 @@
 <script>
-  import MarkdownPost from '../Components/MarkdownPost.svelte'
-  import content from '../Markdown/Test.md'
+  import { MarkdownPost } from '../Components'
+  import content from '../Markdown/AddingMarkdownToSvelte.md'
 </script>
-
-<style>
-</style>
 
 <MarkdownPost markdown={content} />
