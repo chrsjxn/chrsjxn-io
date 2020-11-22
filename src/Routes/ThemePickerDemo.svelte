@@ -48,25 +48,8 @@ export const cleanUp = () => prefersDarkMode.removeListener(updateThemeOnChange)
 </script>
 
 <style>
-  h1 {
-    font-size: 36pt;
-    line-height: 40pt;
-    margin: 0;
-    margin-top: 16px;
-  }
-
-  h2 {
-    font-size: 20pt;
-    line-height: 28pt;
-  }
-
   .date {
     line-height: 20pt;
-  }
-
-  p {
-    font-size: 14pt;
-    line-height: 24pt;
   }
 
   p code {

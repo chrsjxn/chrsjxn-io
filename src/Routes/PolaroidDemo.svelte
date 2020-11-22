@@ -55,11 +55,6 @@
     color: var(--accent-color);
     font-weight: bold;
   }
-
-  p {
-    font-size: 14pt;
-    line-height: 22pt;
-  }
 </style>
 
 <svelte:head>
