@@ -33,6 +33,11 @@
   </ul>
   <h2>Web Technology</h2>
   <ul>
+    <li class="post">
+      <Link href="/svelte/adding-markdown">
+        Building a blog with Svelte: Adding markdown
+      </Link>
+    </li>
     <li class="component">
       <Link href="/components/theme-store">
         Building a simple theme store with Svelte
