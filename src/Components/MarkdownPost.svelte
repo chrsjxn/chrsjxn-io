@@ -1,8 +1,14 @@
 <script>
-  import hljs from 'highlight.js'
+  import hljs from 'highlight.js/lib/highlight'
+  import bash from 'highlight.js/lib/languages/bash'
+  import javascript from 'highlight.js/lib/languages/javascript'
+  import css from 'highlight.js/lib/languages/css'
   import 'highlight.js/styles/a11y-dark.css'
   import MarkdownIt from 'markdown-it'
-  import Layout from './Layout.svelte'
+
+  hljs.registerLanguage('bash', bash)
+  hljs.registerLanguage('javascript', javascript)
+  hljs.registerLanguage('css', css)
 
   export let markdown = ''
 
@@ -24,6 +30,5 @@
   const rendered = md.render(markdown)
 </script>
 
-<Layout>
-  {@html rendered}
-</Layout>
+<!-- Render with the `@html` directive -->
+{@html rendered}

@@ -2,8 +2,8 @@
     "name": "svelte-app",
     "version": "1.0.0",
     "scripts": {
-        "watch:tailwind": "postcss src/tailwind.css -o public/tailwind.css -w",
-        "build:tailwind": "NODE_ENV=production postcss src/tailwind.css -o public/tailwind.css",
+        "watch:tailwind": "postcss src/tailwind.css -o public/build/tailwind.css -w",
+        "build:tailwind": "NODE_ENV=production postcss src/tailwind.css -o public/build/tailwind.css",
         "build": "concurrently 'npm run build:tailwind' 'rollup -c'",
         "dev": "concurrently 'rollup -c -w' 'npm run watch:tailwind'",
         "start": "sirv public --single",

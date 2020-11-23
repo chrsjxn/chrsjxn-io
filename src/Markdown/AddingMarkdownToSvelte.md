@@ -6,15 +6,15 @@ And it ***sucks***!
 
 I've been manually building content with Svelte components, to get the look and feel I want on my site. And then I have to translate those posts into Markdown for posting elsewhere.
 
-So I'm going to build Markdown support for my Svelte site, starting with *this post*. I'll tell you how to add support to your Svelte site, and I'll compare the output on both platforms when I'm done!
+So I'm going to build Markdown support for my Svelte site, starting with *this post*. I'll tell you how I'm doing it if you want to add support to your Svelte site, and I'll compare the output on both platforms when I'm done!
 
 ## Adding `markdown-it`
 
-The first thing we want to do is add a library for Markdown parsing. I'm going to use [`markdown-it`](https://github.com/markdown-it/markdown-it). It's seeing active development and the README has examples of rendering markdown in code, which I will need!
+The first thing we need to do is add a library for Markdown parsing. I'm going to use [`markdown-it`](https://github.com/markdown-it/markdown-it). It's seeing active development and the README has examples of rendering markdown in code, which will definitely help!
 
 ### Step 1: Installing dependencies
 
-`markdown-it` is an easy install via npm, but it does assume that you have a full node environment to fall back on. So I needed to install a few extra dependencies.
+`markdown-it` is an easy install via npm, but it does assume that you have a full node environment to fall back on. So we need to install a few extra dependencies.
 
 ```bash
 npm install --save markdown-it punycode
@@ -27,7 +27,7 @@ With dependencies installed, we can import the library into our Svelte app and t
 
 So let's fix that now.
 
-To support JSON, we just need to add the rollup plugin (`@rollup/plugin-json`) with its default settings:
+To support JSON, we just need to add a rollup plugin (`@rollup/plugin-json`) with its default settings:
 
 ```javascript
 // In imports:
@@ -44,7 +44,7 @@ export default {
 }
 ```
 
-And we also need to tell `rollup` to include the `punycode` version we just installed into our browser bundle:
+And we also need to tell `rollup` to include our `punycode` package into our browser bundle:
 
 ```javascript
 // In plugins:
@@ -58,7 +58,7 @@ resolve({
 
 ### Step 3: Rendering some sample Markdown
 
-With those config updates, we should now be able to render Markdown inside of our Svelte app. So let's build a Markdown component to render that content.
+With those config updates, we should now be able to render Markdown inside of our Svelte app. So let's build a Markdown component to render that content!
 
 We'll take in our Markdown string as a prop (`markdown`) for now. That lets us test with a static string, and we can update the app to read Markdown from files or a CMS in the future.
 
@@ -98,7 +98,7 @@ And we'll need to add our `Markdown` component to test:
 
 ## Reading Markdown from a file
 
-Now that we can render Markdown, we're going to set up our build to read Markdown from files. Authoring is much easier in separate files, and I can use my project's git repo for some basic versioning.
+Now that we can render Markdown, we're going to set up our build to read Markdown from files. Authoring is much easier in separate files, and this lets me use my project's git repo for some basic versioning.
 
 ### Step 4: Importing `*.md`
 
@@ -246,6 +246,7 @@ Once we've done that, we can import a stylesheet from `highlight.js` into our `M
 With all of these pieces in place, I can now write this blog post in Markdown! There is still some work to do, especially styling the rendered HTML to match the rest of my site. But I can create my content in Markdown and let these libraries worry about the HTML!
 
 For a quick demo, here's a comparison of the markdown for this post rendered in my local development environment and in a draft post on `dev.to`:
+
 ![Comparison of this post rendered in Svelte and on dev.to](/__img_path__/markdownComparison.png)
 
 If you want to see the final version of the rollup config, I have a completed copy of the tutorial posted [on github](https://github.com/chrsjxn/svelte-plus-markdown)!
