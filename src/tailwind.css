@@ -34,6 +34,6 @@ code {
     color: var(--accent-color);
 }
 
-pre code {
+pre code, a code {
     color: inherit;
 }
