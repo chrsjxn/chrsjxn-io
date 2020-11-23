@@ -25,3 +25,15 @@ pre {
 li {
     @apply ml-10;
 }
+
+a {
+    color: var(--accent-color-2);
+}
+
+code {
+    color: var(--accent-color);
+}
+
+pre code {
+    color: inherit;
+}
