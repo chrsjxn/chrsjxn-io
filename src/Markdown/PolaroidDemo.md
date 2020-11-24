@@ -16,7 +16,7 @@ complex effects via CSS gradient overlays.
   
 ### Component example
   
-```html
+```svelte
 <Polaroid
     src="/__img_path__/profile.jpg"
     alt="Developer self portrait"

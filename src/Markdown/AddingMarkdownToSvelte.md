@@ -68,7 +68,7 @@ And we need to use Svelte's `@html` feature to add our generated HTML to the pag
 
 ⚠️ Warning: Using `@html` with user submitted content could expose your users to an XSS vulnerability. `markdown-it` has documentation about its [security features and recommendations](https://github.com/markdown-it/markdown-it/blob/master/docs/security.md), which you should read and understand if you need to support user submitted content. ⚠️
 
-```html
+```svelte
 <!-- src/Markdown.svelte -->
 <script>
   import MarkdownIt from 'markdown-it'
@@ -90,7 +90,7 @@ And we need to use Svelte's `@html` feature to add our generated HTML to the pag
 
 And we'll need to add our `Markdown` component to test:
 
-```html
+```svelte
 <script>
   import Markdown from './Markdown.svelte'
 </script>
@@ -141,7 +141,7 @@ We can render *text*.
 
 And now import that markdown into your app:
 
-```html
+```svelte
 <script>
   import Markdown from './Markdown.svelte'
   import exampleMarkdown from './example.md'
@@ -164,7 +164,7 @@ npm install --save highlight.js
 
 We don't need to update our `rollup` config for this step, but we will need to configure highlighting in our `Markdown` component:
 
-```html
+```svelte
 <!-- src/Markdown.svelte -->
 <script>
   import MarkdownIt from 'markdown-it'
@@ -235,7 +235,7 @@ export default {
 
 Once we've done that, we can import a stylesheet from `highlight.js` into our `Markdown` component to render those styles into our site. I'm going to use `a11y-light` for this example, but there are lots of options you can pick, depending on your site's color scheme.
 
-```html
+```svelte
 <!-- src/Markdown.svelte -->
 <script>
   import MarkdownIt from 'markdown-it'
