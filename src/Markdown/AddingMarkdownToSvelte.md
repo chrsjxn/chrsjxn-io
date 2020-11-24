@@ -1,6 +1,6 @@
 # Building a blog with Svelte: Adding Markdown
 
-11/18/2020
+11/24/2020
 
 I started building a personal blog with Svelte a few weeks ago, cross posting to [dev.to](https://dev.to/chrsjxn) for more reach and community.
 

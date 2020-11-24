@@ -1,5 +1,7 @@
 # Building a simple theme store with Svelte
 
+11/18/2020
+
 Dark mode has been gaining in popularity over the past few years, and now all of the major operating systems support a global dark theme. And a lot of major sites offer a dark mode toggle. But with modern browsers we can do better! We can use the user's OS preference to show them the color theme they prefer when they first land on our sites!
 
 This tutorial is going to teach you how to detect a user's OS theme in CSS and JavaScript, as well as how to build a Svelte store to respond to theme changes.
