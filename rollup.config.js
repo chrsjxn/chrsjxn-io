@@ -4,6 +4,9 @@ import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import replace from '@rollup/plugin-replace'
+import { string } from 'rollup-plugin-string'
+import json from '@rollup/plugin-json'
+import styles from 'rollup-plugin-styles'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -63,8 +66,14 @@ export default {
     resolve({
       browser: true,
       dedupe: ['svelte'],
+      preferBuiltins: false,
     }),
     commonjs(),
+    json(),
+    string({
+      include: ['**/*.md'],
+    }),
+    styles(),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated

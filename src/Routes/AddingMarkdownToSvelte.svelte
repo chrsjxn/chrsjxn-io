@@ -1,6 +1,6 @@
 <script>
   import { Layout, MarkdownPost } from '../Components'
-  import markdown from '../Markdown/SvelteThemeStore.md'
+  import markdown from '../Markdown/AddingMarkdownToSvelte.md'
 </script>
 
 <Layout>

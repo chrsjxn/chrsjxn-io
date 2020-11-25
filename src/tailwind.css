@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    color: var(--primary-color);
+    font-family: Proxima Nova, sans-serif;
+    background-color: var(--background-color);
+}
+
+.new {
+    --background-color: hsl(230, 100%, 5%);
+    --accent-color: hsl(285, 100%, 65%);
+    --accent-color-2: hsl(310, 100%, 55%);
+    --primary-color: hsl(230, 100%, 95%);
+}
+
+.full {
+    --primary-color: hsl(110, 10%, 5%);
+    --accent-color: hsl(35, 100%, 35%);
+    --accent-color-2: hsl(10, 100%, 35%);
+    --background-color: hsl(100, 10%, 95%);
+}
+
+
 h1 {
     @apply text-6xl my-6 font-extrabold;
 }
@@ -18,10 +44,22 @@ p {
     @apply text-lg leading-8 my-4;
 }
 
-pre code {
-    @apply text-sm;
+pre {
+    @apply p-4 bg-black text-white text-sm;
 }
 
 li {
     @apply ml-10;
+}
+
+a {
+    color: var(--accent-color-2);
+}
+
+code {
+    color: var(--accent-color);
+}
+
+pre code, a code {
+    color: inherit;
 }
