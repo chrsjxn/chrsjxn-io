@@ -7,6 +7,8 @@
   import 'highlight.js/styles/a11y-dark.css'
   import MarkdownIt from 'markdown-it'
 
+  import { beforeUpdate } from 'svelte'
+
   hljs.registerLanguage('bash', bash)
   hljs.registerLanguage('javascript', javascript)
   hljs.registerLanguage('css', css)
@@ -30,7 +32,11 @@
     },
   })
 
-  const rendered = md.render(markdown)
+  let rendered = ''
+
+  beforeUpdate(() => {
+    rendered = md.render(markdown)
+  })
 </script>
 
 <!-- Render with the `@html` directive -->

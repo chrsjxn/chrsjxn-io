@@ -1,6 +1,12 @@
 <script>
   import { Layout, MarkdownPost, Polaroid } from '../Components'
-  import markdown from '../Markdown/PolaroidDemo.md'
+  import { onMount } from 'svelte'
+
+  let markdown = ''
+
+  onMount(async () => {
+    markdown = (await import('../Markdown/PolaroidDemo.md')).default
+  })
 </script>
 
 <style>

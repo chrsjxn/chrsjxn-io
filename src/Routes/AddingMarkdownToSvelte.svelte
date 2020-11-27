@@ -1,6 +1,12 @@
 <script>
   import { Layout, MarkdownPost } from '../Components'
-  import markdown from '../Markdown/AddingMarkdownToSvelte.md'
+  import { onMount } from 'svelte'
+
+  let markdown = ''
+
+  onMount(async () => {
+    markdown = (await import('../Markdown/AddingMarkdownToSvelte.md')).default
+  })
 </script>
 
 <Layout>
