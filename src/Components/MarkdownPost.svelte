@@ -1,5 +1,5 @@
 <script>
-  import hljs from 'highlight.js/lib/highlight'
+  import hljs from 'highlight.js/lib/core'
   import bash from 'highlight.js/lib/languages/bash'
   import javascript from 'highlight.js/lib/languages/javascript'
   import css from 'highlight.js/lib/languages/css'
