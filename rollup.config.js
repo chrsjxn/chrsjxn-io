@@ -39,9 +39,14 @@ export default {
   input: 'src/main.js',
   output: {
     sourcemap: true,
-    format: 'iife',
+    format: 'es',
     name: 'app',
-    file: 'public/build/bundle.js',
+    dir: 'public/build/',
+    manualChunks: (moduleName) => {
+      if (moduleName.includes('node_modules')) {
+        return 'vendor'
+      }
+    },
   },
   plugins: [
     replace({
