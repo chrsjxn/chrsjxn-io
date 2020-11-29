@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 body {
+    @apply text-lg leading-8 my-4;
+
     margin: 0;
     padding: 0;
     position: absolute;
@@ -38,10 +40,6 @@ h2 {
 
 h3 {
     @apply text-2xl my-6 font-bold;
-}
-
-p {
-    @apply text-lg leading-8 my-4;
 }
 
 pre {
