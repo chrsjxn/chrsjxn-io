@@ -14,5 +14,7 @@
 
 <Layout>
   <MarkdownPost {markdown} />
-  <NextPostLink {nextPost} />
+  {#if markdown}
+    <NextPostLink {nextPost} />
+  {/if}
 </Layout>
