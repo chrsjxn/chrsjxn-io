@@ -10,7 +10,7 @@
 </style>
 
 {#if nextPost}
-  <div class="text-m">
+  <div class="text-m mb-10">
     <Link href={nextPost.path}>
       <b>Continue reading:</b><br /><span class="title">{nextPost.title}
         ({nextPost.date})</span>
