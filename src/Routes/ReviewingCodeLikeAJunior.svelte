@@ -1,5 +1,7 @@
 <script>
   import { Aside, BlogPost, Layout } from '../Components'
+  import NextPostLink from '../Components/NextPostLink.svelte'
+  export let nextPost = null
 </script>
 
 <style>
@@ -116,4 +118,5 @@
       </p>
     </div>
   </BlogPost>
+  <NextPostLink {nextPost} />
 </Layout>

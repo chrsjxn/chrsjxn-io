@@ -5,19 +5,31 @@
   import router from 'page'
   import { posts } from './Modules/posts'
 
-  let page
+  let page = About
+  let nextPost = null
+
+  router('*', (_, next) => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+
+    next()
+  })
+
+  posts.forEach((post, i) => {
+    router(post.path, () => {
+      nextPost = posts[i + 1]
+      page = post.component
+    })
+  })
 
   router('/', () => (page = Home))
   router('/about', () => (page = About))
-
-  for (let i in posts) {
-    const post = posts[i]
-    router(post.path, () => (page = post.component))
-  }
-
   router('*', () => (page = Error404))
 
   router.start()
 </script>
 
-<svelte:component this={page} />
+<svelte:component this={page} {nextPost} />

@@ -52,6 +52,7 @@ li {
 }
 
 a {
+    @apply font-bold;
     color: var(--accent-color-2);
 }
 
@@ -61,4 +62,8 @@ code {
 
 pre code, a code {
     color: inherit;
+}
+
+p {
+    @apply my-6;
 }

@@ -1,12 +1,15 @@
 <script>
   import { Layout, MarkdownPost, Polaroid } from '../Components'
   import { onMount } from 'svelte'
+  import NextPostLink from '../Components/NextPostLink.svelte'
 
   let markdown = ''
 
   onMount(async () => {
     markdown = (await import('../Markdown/PolaroidDemo.md')).default
   })
+
+  export let nextPost = null
 </script>
 
 <style>
@@ -51,4 +54,5 @@
   </div>
 
   <MarkdownPost {markdown} />
+  <NextPostLink {nextPost} />
 </Layout>
