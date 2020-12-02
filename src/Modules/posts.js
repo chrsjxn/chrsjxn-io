@@ -1,10 +1,18 @@
 import AddingMarkdownToSvelte from '../Routes/AddingMarkdownToSvelte.svelte'
+import CodeSplittingInSvelte from '../Routes/CodeSplittingInSvelte.svelte'
 import ThemePickerDemo from '../Routes/ThemePickerDemo.svelte'
 import ThreeTipsReview from '../Routes/ThreeTipsReview.svelte'
 import PolaroidDemo from '../Routes/PolaroidDemo.svelte'
 import ReviewingCodeLikeAJunior from '../Routes/ReviewingCodeLikeAJunior.svelte'
 
 export const posts = [
+  {
+    title: 'Building a blog with Svelte: Code splitting',
+    date: '12/2/2020',
+    path: '/svelte/code-splitting',
+    component: CodeSplittingInSvelte,
+    external: '',
+  },
   {
     title: 'Building a blog with Svelte: Adding Markdown',
     date: '11/25/2020',
