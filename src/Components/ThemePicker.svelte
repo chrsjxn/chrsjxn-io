@@ -17,6 +17,7 @@
   button {
     border: none;
     background: none;
+    padding: 0 16px;
   }
 </style>
 
