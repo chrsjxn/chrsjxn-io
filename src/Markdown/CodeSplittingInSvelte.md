@@ -111,6 +111,6 @@ With all of that in place, my blog now loads only the content it needs and is se
 
 My authoring workflow is still simple, mostly writing Markdown into a file with a little bit of Svelte to wire up the page.
 
-And if I want to migrate to a CMS or build an api to serve my content, the components are ready to load that content asynchronously with only a small change!
+And if I want to migrate to a CMS or build an api to serve my content, the components are ready to load that content asynchronously with only a small change! (Moving to loading posts from another source would even let me avoid creating a new route component for each post!)
 
 These changes will be up shortly [on github](https://github.com/chrsjxn/svelte-plus-markdown), and if you want to chat, you can find me [on twitter](https://twitter.com/c_jackson_js)!
