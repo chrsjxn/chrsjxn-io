@@ -83,7 +83,7 @@
   }
 
   .caption {
-    font-family: 'Permanent Marker', cursive;
+    font-family: cursive;
     font-size: 20pt;
     color: rgba(01, 02, 03, 80%);
   }
