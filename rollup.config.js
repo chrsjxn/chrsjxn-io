@@ -6,7 +6,7 @@ import { terser } from 'rollup-plugin-terser'
 import replace from '@rollup/plugin-replace'
 import { string } from 'rollup-plugin-string'
 import json from '@rollup/plugin-json'
-import styles from 'rollup-plugin-styles'
+import postcss from 'rollup-plugin-postcss'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -78,7 +78,7 @@ export default {
     string({
       include: ['**/*.md'],
     }),
-    styles(),
+    postcss(),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated

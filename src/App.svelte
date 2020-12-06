@@ -5,6 +5,8 @@
   import router from 'page'
   import { posts } from './Modules/posts'
 
+  import './tailwind.css'
+
   let page = About
   let nextPost = null
 
