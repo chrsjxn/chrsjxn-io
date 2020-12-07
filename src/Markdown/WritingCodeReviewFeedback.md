@@ -43,14 +43,14 @@ People will be able to tell if your comments are forced or insincere. This could
 
 ### ✅ Do leave emoji comments for quick praise
 
-> 👍
-> > 🔥
+> // 👍\
+> 🔥
 
-> 👍
-> > 🎉
+> // 👍\
+> 🎉
 
-> 👍
-> > 🙌
+> // 👍\
+> 🙌
 
 Emoji responses are an easy way to call out positive contributions without putting much thought into the wording.
 
