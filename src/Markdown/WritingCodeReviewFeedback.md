@@ -1,4 +1,4 @@
-# Writing Code Review Feedback
+# Writing code review feedback
 
 Code review is a core piece of many engineering workflows. Good code review practices have a big impact on code quality. They can identify bugs or testing gaps before code is shipped to users, or identify overly complex logic before it becomes tech debt. And they're one of many tools available to teach engineers about your team's technology, standards, and practices!
 
@@ -7,8 +7,6 @@ But if done carelessly, code review can also contribute to a toxic team culture 
 Here are some of my tips for writing PR feedback. Not every review or every comment should use all of them, but using them will help keep your feedback constructive and collaborative! 
 
 ## Table of Contents
-- [Writing Code Review Feedback](#writing-code-review-feedback)
-  - [Table of Contents](#table-of-contents)
   - [Include positive and negative feedback!](#include-positive-and-negative-feedback)
     - [⛔ Don't go overboard with positive feedback](#-dont-go-overboard-with-positive-feedback)
     - [⛔ Don't leave insincere positive comments](#-dont-leave-insincere-positive-comments)
@@ -56,11 +54,11 @@ Emoji responses are an easy way to call out positive contributions without putti
 
 ### ✅ Do highlight things you learned as a reviewer
 
-> 👍
-> > I've never used this function before. Thanks for sharing!
+> // 👍\
+> I've never used this function before. Thanks for sharing!
 
-> 👍
-> > I didn't know our library supported this function! Can you share a link to the docs?
+> // 👍\
+> I didn't know our library supported this function! Can you share a link to the docs?
 
 Code reviews are a great learning tool, and not only for the code author. If you learned something new from your review, celebrate it!
 
@@ -68,43 +66,43 @@ Code reviews are a great learning tool, and not only for the code author. If you
 
 ### ⛔ Don't use dismissive language
 
-> 👎
-> > Why didn't you just implement your function this way? It would be so much simpler!
+> // 👎\
+> Why didn't you just implement your function this way? It would be so much simpler!
 
-> 👍
-> > Let's rewrite your function this way. I think that implementation would be easier for readers to understand!
+> // 👍\
+> Let's rewrite your function this way. I think that implementation would be easier for readers to understand!
 
 Comments that belittle or diminish people turn code review into an antagonistic process. Staying more collaborative makes it easier for people to accept your feedback, and makes them more likely to ask you for feedback in the future.
 
 ### ⛔ Don't leave comments without content
 
-> 👎
-> > ?
+> // 👎\
+> ?
 
-> 👎
-> > Fix me
+> // 👎\
+> Fix me
 
-> 👎
-> > WTF?
+> // 👎\
+> WTF?
 
-> 👍
-> > Looks like this `debugger` was left in by accident. Let's be sure to remove it before merging the PR!
+> // 👍\
+> Looks like this `debugger` was left in by accident. Let's be sure to remove it before merging the PR!
 
 These comments might be enough to raise attention to obvious issues, like a `debugger` left in an open PR. But they can contribute to a dismissive tone and put code authors on the defensive.
 
 ### ⛔ Don't repeat the same comment
 
 
-> 👎
-> > Don't use `any`
-> > Don't use `any`
-> > ...
-> > Don't use `any`
+> // 👎\
+> Don't use `any`\
+> Don't use `any`\
+> ...\
+> Don't use `any`
 
-> 👍
-> > Typescript `any` is potentially dangerous, because it erases type information and could lead to subtle bugs elsewhere in the application.
-> > 
-> > I see a few instances of `any` in this PR. Can you update them to use stricter typing?
+> // 👍\
+> Typescript `any` is potentially dangerous, because it erases type information and could lead to subtle bugs elsewhere in the application.\
+> \
+> I see a few instances of `any` in this PR. Can you update them to use stricter typing?
 
 Repeating the same comment multiple times makes it difficult to include relevant details in each comment, and you run the risk of overwhelming your other feedback. 
 
@@ -114,11 +112,11 @@ If you are repeating feedback too many times, you should summarize your suggesti
 
 ### ✅ Do respect different levels of expertise
 
-> 👎
-> > Let's reimplement this function to use this pattern.
+> // 👎\
+> Let's reimplement this function to use this pattern.
 
-> 👍
-> > Let's reimplement this function to use this pattern. Check out this other example from our codebase, or these docs, and let me know if you have any questions!
+> // 👍\
+> Let's reimplement this function to use this pattern. Check out this other example from our codebase, or these docs, and let me know if you have any questions!
 
 Code review is one of the tools we have to teach engineers about new projects, new libraries, or new technologies. When working with someone who's learning, links to resources or examples are useful.
 
@@ -128,11 +126,11 @@ Feedback is generally subjective, based on your experiences as an engineer and a
 
 ### ✅ Do offer feedback from your perspective
 
-> 👎
-> > This pattern is hard to understand. Could we refactor to use named functions?
+> // 👎\
+> This pattern is hard to understand. Could we refactor to use named functions?
 
-> 👍
-> > I found this pattern hard to understand. If we refactored to use named functions, it'd be easier for me to read and understand what we're doing here.
+> // 👍\
+> I found this pattern hard to understand. If we refactored to use named functions, it'd be easier for me to read and understand what we're doing here.
 
 Giving feedback from your perspective leaves it open to the possibility that you're missing information. Maybe there's a shared pattern in the code base that you're just not used to yet.
 
@@ -140,10 +138,10 @@ Giving feedback from your perspective also leaves it open to discussion and diff
 
 ### ✅ Do ask questions
 
-> 👍
-> > This boolean logic is tough for me to understand. Can you explain the different conditions to me?
-> > 
-> > Maybe we can use that to break the full condition down into some helper functions.
+> // 👍\
+> This boolean logic is tough for me to understand. Can you explain the different conditions to me?\
+> \
+> Maybe we can use that to break the full condition down into some helper functions.
 
 Asking questions can lead to a clearer explanation of what some complex logic is doing. That explanation can suggest ways to simplify or refactor that aren't as obvious without being familiar with the details.
 
@@ -155,11 +153,11 @@ When offering feedback, it helps to be explicit. It makes your expectations clea
 
 ### ✅ Be explicit about *why*
 
-> 👎
-> > Don't use `any`.
+> // 👎\
+> Don't use `any`.
 
-> 👍
-> > Typescript `any` is potentially dangerous, because it erases type information and could lead to subtle bugs elsewhere in the application.
+> // 👍\
+> Typescript `any` is potentially dangerous, because it erases type information and could lead to subtle bugs elsewhere in the application.
 
 Explaining why makes it clear where your feedback is coming from, especially for best practices or dangerous patterns.
 
@@ -169,14 +167,14 @@ If you've got docs, this is a great reason to link them!
 
 ### ✅ Be explicit about *importance*
 
-> 👍
-> > I'm requesting changes on this PR. Please extract these secret keys from the source code and rotate them to avoid leaks before this is deployed to production.
+> // 👍\
+> I'm requesting changes on this PR. Please remove these secret keys from the source code and rotate them to avoid leaks before this is deployed to production.
 
-> 👍
-> > As a follow up: Let's refactor this component and add more test coverage to (hopefully) prevent future regressions
+> // 👍\
+> As a follow up: Let's refactor this component and add more test coverage to (hopefully) prevent future regressions
 
-> 👍
-> > Nit: This function name may be clearer as `shouldShowModal`
+> // 👍\
+> Nit: This function name may be clearer as `shouldShowModal`
 
 Some feedback is critical to address before a PR is merged, like security concerns or bugs in critical flows. If your feedback calls out an issue like that, your review should Request Changes to ensure they're addressed.
 

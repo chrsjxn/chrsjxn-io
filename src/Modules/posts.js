@@ -8,7 +8,7 @@ import WritingCodeReviewFeedback from '../Routes/WritingCodeReviewFeedback.svelt
 
 export const posts = [
   {
-    title: 'Writing Code Review Feedback',
+    title: 'Writing code review feedback',
     date: '12/9/2020',
     path: '/code-review/writing-feedback',
     component: WritingCodeReviewFeedback,
