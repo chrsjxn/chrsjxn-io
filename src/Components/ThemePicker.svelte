@@ -19,6 +19,12 @@
     background: none;
     padding: 0 16px;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    button:active {
+      transform: scale(0.95);
+    }
+  }
 </style>
 
 <button
