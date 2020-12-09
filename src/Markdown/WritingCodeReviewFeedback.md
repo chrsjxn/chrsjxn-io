@@ -1,5 +1,7 @@
 # Do's and don't's of writing code review feedback
 
+12/09/2020
+
 Code review is a core piece of many engineering workflows. Good code review practices have a big impact on code quality. They can identify bugs or testing gaps before code is shipped to users, or identify overly complex logic before it becomes tech debt. And they're one of many tools available to teach engineers about your team's technology, standards, and practices!
 
 But if done carelessly, code review can also contribute to a toxic team culture. If feedback isn't given intentionally, it can add a lot of stress and anxiety to a process that's supposed to be helpful.
