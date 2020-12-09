@@ -4,8 +4,8 @@
     "scripts": {
         "watch:tailwind": "postcss src/tailwind.css -o public/build/tailwind.css -w",
         "build:tailwind": "NODE_ENV=production postcss src/tailwind.css -o public/build/tailwind.css",
-        "build": "rollup -c",
-        "dev": "rollup -c -w",
+        "build": "concurrently 'npm run build:tailwind' 'rollup -c'",
+        "dev": "concurrently 'rollup -c -w' 'npm run watch:tailwind'",
         "start": "sirv public --single",
         "lint": "eslint \"src/**/*.{js,svelte}\"",
         "fix": "eslint --fix \"src/**/*.{js,svelte}\"",
@@ -28,7 +28,6 @@
         "prettier-plugin-svelte": "^1.4.1",
         "rollup": "^2.3.4",
         "rollup-plugin-livereload": "^2.0.0",
-        "rollup-plugin-postcss": "^3.1.8",
         "rollup-plugin-string": "^3.0.0",
         "rollup-plugin-styles": "^3.11.0",
         "rollup-plugin-svelte": "^6.0.0",

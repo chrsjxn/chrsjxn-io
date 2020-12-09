@@ -90,15 +90,7 @@
 </style>
 
 <div class="polaroid">
-  <div class={classNames}>
-    <img
-      {src}
-      {alt}
-      class:disableFilter
-      width="310"
-      height="310"
-      loading="lazy" />
-  </div>
+  <div class={classNames}><img {src} {alt} class:disableFilter /></div>
   <div class="caption">
     <slot />
   </div>
