@@ -2,9 +2,9 @@
 
 Code review is a core piece of many engineering workflows. Good code review practices have a big impact on code quality. They can identify bugs or testing gaps before code is shipped to users, or identify overly complex logic before it becomes tech debt. And they're one of many tools available to teach engineers about your team's technology, standards, and practices!
 
-But if done carelessly, code review can also contribute to a toxic team culture or push people to avoid getting feedback that would help.
+But if done carelessly, code review can also contribute to a toxic team culture. If feedback isn't given intentionally, it can add a lot of stress and anxiety to a process that's supposed to be helpful.
 
-Here are some of my tips for writing PR feedback. Not every review or every comment should use all of them, but using them will help keep your feedback constructive and collaborative! 
+Here are some of my tips for writing PR feedback, based on my experiences and some of the mistakes I've made. Not every review or every comment should use all of them, but using them will help keep your feedback constructive and collaborative! 
 
 ## Table of Contents
   - [Include positive and negative feedback!](#include-positive-and-negative-feedback)
