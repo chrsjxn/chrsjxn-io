@@ -4,14 +4,23 @@ import ThemePickerDemo from '../Routes/ThemePickerDemo.svelte'
 import ThreeTipsReview from '../Routes/ThreeTipsReview.svelte'
 import PolaroidDemo from '../Routes/PolaroidDemo.svelte'
 import ReviewingCodeLikeAJunior from '../Routes/ReviewingCodeLikeAJunior.svelte'
+import WritingCodeReviewFeedback from '../Routes/WritingCodeReviewFeedback.svelte'
 
 export const posts = [
+  {
+    title: "Do's and don't's of writing code review feedback",
+    date: '12/9/2020',
+    path: '/code-review/writing-feedback',
+    component: WritingCodeReviewFeedback,
+    external: '',
+  },
   {
     title: 'Building a blog with Svelte: Code splitting',
     date: '12/2/2020',
     path: '/svelte/code-splitting',
     component: CodeSplittingInSvelte,
-    external: '',
+    external:
+      'https://dev.to/chrsjxn/building-a-blog-with-svelte-code-splitting-1mdi',
   },
   {
     title: 'Building a blog with Svelte: Adding Markdown',

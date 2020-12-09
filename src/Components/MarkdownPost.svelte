@@ -6,6 +6,7 @@
   import hljsSvelte from 'highlightjs-svelte/dist/index'
   import 'highlight.js/styles/a11y-dark.css'
   import MarkdownIt from 'markdown-it'
+  import Anchor from 'markdown-it-anchor'
 
   import { beforeUpdate } from 'svelte'
 
@@ -30,6 +31,13 @@
 
       return '' // use external default escaping
     },
+  }).use(Anchor, {
+    slugify: (str) =>
+      str
+        .replace(/[^a-zA-Z-_ ]/g, '')
+        .toLowerCase()
+        .split(' ')
+        .join('-'),
   })
 
   let rendered = ''

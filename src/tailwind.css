@@ -67,3 +67,7 @@ pre code, a code {
 p {
     @apply my-6;
 }
+
+blockquote {
+    @apply pl-4 border-solid border-gray-300 border-l-4;
+}
