@@ -9,7 +9,8 @@
         "start": "sirv public --single",
         "lint": "eslint \"src/**/*.{js,svelte}\"",
         "fix": "eslint --fix \"src/**/*.{js,svelte}\"",
-        "format": "prettier --write \"src/**/*.{js,svelte}\""
+        "format": "prettier --write \"src/**/*.{js,svelte}\"",
+        "clean": "rm public/build/*"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^14.0.0",
