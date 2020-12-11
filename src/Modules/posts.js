@@ -12,7 +12,8 @@ export const posts = [
     date: '12/9/2020',
     path: '/code-review/writing-feedback',
     component: WritingCodeReviewFeedback,
-    external: '',
+    external:
+      'https://dev.to/chrsjxn/do-s-and-don-t-s-of-writing-code-review-feedback-2lcm',
   },
   {
     title: 'Building a blog with Svelte: Code splitting',

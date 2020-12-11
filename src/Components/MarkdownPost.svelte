@@ -4,7 +4,7 @@
   import javascript from 'highlight.js/lib/languages/javascript'
   import css from 'highlight.js/lib/languages/css'
   import hljsSvelte from 'highlightjs-svelte/dist/index'
-  import 'highlight.js/styles/a11y-dark.css'
+  import 'highlight.js/styles/a11y-light.css'
   import MarkdownIt from 'markdown-it'
   import Anchor from 'markdown-it-anchor'
 

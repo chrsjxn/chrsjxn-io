@@ -11,6 +11,12 @@
 
     padding: 16px 0;
   }
+
+  @media print {
+    nav {
+      display: none;
+    }
+  }
 </style>
 
 <nav>

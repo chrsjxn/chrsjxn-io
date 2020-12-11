@@ -7,6 +7,12 @@
   .title {
     color: var(--primary-color);
   }
+
+  @media print {
+    div {
+      display: none;
+    }
+  }
 </style>
 
 {#if nextPost}

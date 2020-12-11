@@ -29,6 +29,15 @@ body {
     --background-color: hsl(100, 10%, 95%);
 }
 
+@media print {
+    .new, .full {
+        --background-color: white;
+        --primary-color: black;
+        --accent-color: darkred;
+        --accent-color-2: darkblue;
+    }
+}
+
 
 h1 {
     @apply text-6xl my-6 font-extrabold;
@@ -43,7 +52,7 @@ h3 {
 }
 
 pre {
-    @apply p-4 bg-black text-white text-sm;
+    @apply p-4 bg-white text-black text-sm;
     overflow-x: auto;
 }
 

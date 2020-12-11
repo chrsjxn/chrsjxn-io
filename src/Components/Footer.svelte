@@ -18,6 +18,12 @@
     width: clamp(20ch, 75%, 80ch);
     margin: auto;
   }
+
+  @media print {
+    .wrapper {
+      position: absolute;
+    }
+  }
 </style>
 
 <div class="wrapper">
