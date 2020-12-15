@@ -19,15 +19,16 @@ Once signed up for Cloudinary, all I had to do in their admin UI was configure m
 Netlify supports [proxy redirects](https://docs.netlify.com/routing/redirects/rewrites-proxies/#proxy-to-another-service) to other services, as long as we configure our redirect with a 200 status. To enable those redirects, we just need to add a [redirect config](https://docs.netlify.com/configure-builds/file-based-configuration/#redirects) to our `netlify.toml`.
 
 ```
-# Paths like `/cloudinary/imageFile.jpg` go to cloudinary:
+# Paths like `/cloudinary/imageFile.jpg` go to cloudinary
+# Don't forget to swap in your username and domain:
 [[redirects]]
   from = "/cloudinary/*"
   to = """\
     https://res.cloudinary.com/\
-    chrsjxn/\
+    <Cloudinary Account Name>/\
     image/fetch/\
     q_auto,f_auto/\
-    https://www.chrsjxn.io/images/:splat\
+    https://<Your Blog Domain>/images/:splat\
   """
   status = 200
 
