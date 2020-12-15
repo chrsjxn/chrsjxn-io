@@ -92,6 +92,6 @@ I may follow up by setting up a second image path for HD images, like photos tha
 
 And even if you're not using Netlify to host your blog, you can use `@rollup/plugin-replace` to swap out your local URL for a Cloudinary URL in production. You'll need to include the full Cloudinary fetch URL in your plugin config, and you'll need to be sure to serve the base image assets on your production domain.
 
-Of course, how could I end this post without including at least one image? So here's a screenshot of the [polaroid component I've been hacking on](https://www.chrsjxn.io/components/polaroid), rendered in dark mode:
+Of course, how could I end this post without including at least one image? So here's a screenshot of the [polaroid component I've been hacking on](https://www.chrsjxn.io/components/polaroid), rendered in dark mode, with images fetched from Cloudinary:
 
 ![Polaroid component demo. Four polaroid images stack on top of each other, slightly haphazardly. One shows SF during the wildfires, when the sky was orange and dark. One shows the author, looking at his laptop and thinking. And the other two are close ups of birds, one seagull and one raven.](/__img_path__/PolaroidComponentDemo.png)
