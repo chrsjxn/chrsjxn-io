@@ -12,7 +12,7 @@ Netlify caching is great, but a single image file could outweigh the entire appl
 
 I picked [Cloudinary](https://cloudinary.com/), because I have some familiarity with their [remote image fetch](https://cloudinary.com/documentation/fetch_remote_images#remote_image_fetch_url) feature from work, and their free tier is way more than I need for the amount of traffic that my blog is currently seeing.
 
-Once signed up for Cloudinary, all I had to do in their admin UI was configure my security settings to restrict remote image fetching to images on my domain, via the security settings.
+Once signed up for Cloudinary, all I had to do in their admin UI was configure my security settings to restrict remote image fetching to images on my domain.
 
 ## Redirecting to Cloudinary on Netlify
 
