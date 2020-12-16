@@ -5,8 +5,16 @@ import ThreeTipsReview from '../Routes/ThreeTipsReview.svelte'
 import PolaroidDemo from '../Routes/PolaroidDemo.svelte'
 import ReviewingCodeLikeAJunior from '../Routes/ReviewingCodeLikeAJunior.svelte'
 import WritingCodeReviewFeedback from '../Routes/WritingCodeReviewFeedback.svelte'
+import CloudinarySupport from '../Routes/CloudinarySupport.svelte'
 
 export const posts = [
+  {
+    title: 'Building a blog with Svelte: Fetching images via CDN',
+    date: '12/16/2020',
+    path: '/svelte/images-via-cdn',
+    component: CloudinarySupport,
+    external: '',
+  },
   {
     title: "Do's and don't's of writing code review feedback",
     date: '12/9/2020',
