@@ -6,8 +6,16 @@ import PolaroidDemo from '../Routes/PolaroidDemo.svelte'
 import ReviewingCodeLikeAJunior from '../Routes/ReviewingCodeLikeAJunior.svelte'
 import WritingCodeReviewFeedback from '../Routes/WritingCodeReviewFeedback.svelte'
 import CloudinarySupport from '../Routes/CloudinarySupport.svelte'
+import E2ETestProsAndCons from '../Routes/E2ETestProsAndCons.svelte'
 
 export const posts = [
+  {
+    title: 'End-to-End Testing: Pros and Cons',
+    date: '01/13/2021',
+    path: '/testing/e2e-pros-and-cons',
+    component: E2ETestProsAndCons,
+    external: '',
+  },
   {
     title: 'Building a blog with Svelte: Fetching images via CDN',
     date: '12/16/2020',

@@ -1,0 +1,40 @@
+Benefits of understanding the proxy api:
+- Used in libraries like `immer` to implement transparent object immutability with mutable syntax
+- Helpful for debugging without needing to modify or deeply understand how an object works
+
+Examples:
+- Proxy that logs whenever a property is set:
+```
+const proxy = new Proxy(baseObject, {
+    set: function(obj, prop, value) {
+        if (prop === 'foo') {
+            console.log('updating foo on baseObject:', value)
+        }
+
+        if (value === 'foo') {
+            console.log('setting a property to foo on baseObject')
+        }
+
+        return Reflect.set(...arguments)
+    }
+})
+```
+
+- Proxy that logs whenever a function is called: 
+```
+const proxy = new Proxy(console, {
+    get: function(obj, prop) {
+        if (['log', 'warn', 'error'].includes(prop)) {
+            console.log(`proxying ${prop} on console`)
+            return function() {
+                return Reflect.apply(obj[prop], obj, arguments)
+            }
+        }
+
+        return Reflect.get(...arguments)
+    }
+})
+```
+
+Caveats:
+- Not supported in IE (like so many things), but can be polyfilled

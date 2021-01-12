@@ -1,0 +1,7 @@
+Pros:
+- Test your code like a user will interact with it
+- Testing the full application means you can detect issues in any part of your system
+
+Cons:
+- Errors are hard to pin down, unless you have a strong foundation of tests at lower levels. This is part of what leads to E2E tests being found to be flaky
+- The more complex your application, the more complex your tests. Experiments, feature flags, more service integrations all add up to additional points of potential failure that might not match up with what your customers see
