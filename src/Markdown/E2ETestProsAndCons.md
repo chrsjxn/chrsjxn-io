@@ -34,6 +34,6 @@ So, what's the verdict? Looking back, I worry that investing in our end to end t
 
 Being able to test all the way from login to checkout is an advantage, because any bugs on that critical path can be very expensive. But those bugs are also pretty rare, since developers are extra vigilant about those features. And any issue we do deploy is going to show up in our metrics much sooner than it will cause an end to end test to fail.
 
-That's not a bad foundation. But without a strong base of unit or integration tests to build on top of, it's hard to fix failures. And that doesn't help sell the end to end tests to our product engineers.
+That's not a bad result. But without a strong base of unit or integration tests to build on top of, it's hard to understand failures. And that doesn't help sell the end to end tests to our product engineers.
 
 Do you have an end to end testing setup that you like working with? How did you solve these problems and make the tests useful to your engineers?
