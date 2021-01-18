@@ -41,7 +41,8 @@ export const cycleTheme = () =>
   theme.update((currentTheme) => nextTheme(currentTheme))
 
 theme.subscribe((theme) => {
-  document.getElementById('body').className = theme.name
+  document.getElementById('body').classList.remove('full', 'new')
+  document.getElementById('body').classList.add(theme.name)
 })
 
 const osThemeListener = (e) => {

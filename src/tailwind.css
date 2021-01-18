@@ -29,6 +29,12 @@ body {
     --background-color: hsl(100, 10%, 95%);
 }
 
+.terminal {
+    @apply text-2xl;
+
+    font-family: monospace;
+}
+
 @media print {
     .new, .full {
         --background-color: white;

@@ -1,6 +1,15 @@
 <script>
   import ThemePicker from './ThemePicker.svelte'
   import Link from './Link.svelte'
+
+  const toggleTerminal = () => {
+    const cl = document.getElementById('body').classList
+    if (cl.contains('terminal')) {
+      cl.remove('terminal')
+    } else {
+      cl.add('terminal')
+    }
+  }
 </script>
 
 <style>
@@ -17,6 +26,12 @@
       display: none;
     }
   }
+
+  button {
+    padding: 0 16px;
+    border: none;
+    background: none;
+  }
 </style>
 
 <nav>
@@ -26,5 +41,6 @@
   <div class="right-nav">
     <Link href="/about">About</Link>
     <ThemePicker />
+    <button on:click={toggleTerminal}>💻</button>
   </div>
 </nav>
