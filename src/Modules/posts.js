@@ -11,7 +11,7 @@ import E2ETestProsAndCons from '../Routes/E2ETestProsAndCons.svelte'
 export const posts = [
   {
     title: 'End-to-End Testing: Pros and Cons',
-    date: '01/13/2021',
+    date: '01/20/2021',
     path: '/testing/e2e-pros-and-cons',
     component: E2ETestProsAndCons,
     external: '',
