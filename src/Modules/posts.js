@@ -6,14 +6,14 @@ import PolaroidDemo from '../Routes/PolaroidDemo.svelte'
 import ReviewingCodeLikeAJunior from '../Routes/ReviewingCodeLikeAJunior.svelte'
 import WritingCodeReviewFeedback from '../Routes/WritingCodeReviewFeedback.svelte'
 import CloudinarySupport from '../Routes/CloudinarySupport.svelte'
-import E2ETestProsAndCons from '../Routes/E2ETestProsAndCons.svelte'
+import GettingValueFromE2ETests from '../Routes/GettingValueFromE2ETests.svelte'
 
 export const posts = [
   {
-    title: 'End-to-End Testing: Pros and Cons',
-    date: '01/20/2021',
+    title: 'Getting Value from End to End Tests',
+    date: '02/03/2021',
     path: '/testing/e2e-pros-and-cons',
-    component: E2ETestProsAndCons,
+    component: GettingValueFromE2ETests,
     external: '',
   },
   {

@@ -6,7 +6,7 @@
   let markdown = ''
 
   onMount(async () => {
-    markdown = (await import('../Markdown/E2ETestProsAndCons.md')).default
+    markdown = (await import('../Markdown/GettingValueFromE2ETests.md')).default
   })
 
   export let nextPost = null
