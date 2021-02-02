@@ -12,7 +12,7 @@ export const posts = [
   {
     title: 'Getting Value from End to End Tests',
     date: '02/03/2021',
-    path: '/testing/e2e-pros-and-cons',
+    path: '/testing/getting-value-from-end-to-end-tests',
     component: GettingValueFromE2ETests,
     external: '',
   },
