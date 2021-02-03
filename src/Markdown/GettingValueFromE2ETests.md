@@ -4,7 +4,7 @@
 
 My big project for the second half of 2020 was to "fix" some of our end to end tests—to make them useful. In some ways, the project was a huge success!
 
-We unblocked automation through our login flow, fixing some persistent flakiness from an ongoing refactor of our session management. And we build the tests into a docker image, so we could easily execute them in any of our deploy pipelines. We now run them automatically before deploying several critical services, and it only takes a single PR to integrate them with other deploys.
+We unblocked automation through our login flow, fixing some persistent flakiness from an ongoing refactor of our session management. And we built the tests into a docker image, so we could easily execute them in any of our deploy pipelines. We now run them automatically before deploying several critical services, and it only takes a single PR to integrate them with other deploys.
 
 Despite that success, I still see a lot of challenges with these tests. And I have some advice, if you're thinking about writing your own end to end tests.
 
