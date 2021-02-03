@@ -6,8 +6,16 @@ import PolaroidDemo from '../Routes/PolaroidDemo.svelte'
 import ReviewingCodeLikeAJunior from '../Routes/ReviewingCodeLikeAJunior.svelte'
 import WritingCodeReviewFeedback from '../Routes/WritingCodeReviewFeedback.svelte'
 import CloudinarySupport from '../Routes/CloudinarySupport.svelte'
+import GettingValueFromE2ETests from '../Routes/GettingValueFromE2ETests.svelte'
 
 export const posts = [
+  {
+    title: 'Getting Value from End to End Tests',
+    date: '02/03/2021',
+    path: '/testing/getting-value-from-end-to-end-tests',
+    component: GettingValueFromE2ETests,
+    external: '',
+  },
   {
     title: 'Building a blog with Svelte: Fetching images via CDN',
     date: '12/16/2020',
