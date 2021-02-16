@@ -1,20 +1,12 @@
 <script>
   import { Layout, MarkdownPost } from '../Components'
-  import { onMount } from 'svelte'
   import NextPostLink from '../Components/NextPostLink.svelte'
-
-  let markdown = ''
-
-  onMount(async () => {
-    markdown = (await import('../Markdown/CodeSplittingInSvelte.md')).default
-  })
+  import markdown from '../Markdown/CodeSplittingInSvelte.md'
 
   export let nextPost = null
 </script>
 
 <Layout>
   <MarkdownPost {markdown} />
-  {#if markdown}
-    <NextPostLink {nextPost} />
-  {/if}
+  <NextPostLink {nextPost} />
 </Layout>
