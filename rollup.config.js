@@ -46,6 +46,10 @@ export default {
       if (moduleName.includes('node_modules')) {
         return 'vendor'
       }
+
+      if (moduleName.includes('src/Components/')) {
+        return 'main'
+      }
     },
   },
   plugins: [

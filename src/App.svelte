@@ -18,9 +18,9 @@
   })
 
   posts.forEach((post, i) => {
-    router(post.path, () => {
+    router(post.path, async () => {
       nextPost = posts[i + 1]
-      page = post.component
+      page = (await post.loader()).default
     })
   })
 
