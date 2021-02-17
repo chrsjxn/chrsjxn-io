@@ -48,7 +48,7 @@ export default {
       }
 
       if (moduleName.includes('src/Components/')) {
-        return 'main'
+        return 'components'
       }
     },
   },
