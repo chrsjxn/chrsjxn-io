@@ -1,5 +1,12 @@
 export const posts = [
   {
+    title: 'Building a blog with Svelte: Dynamic imports For Svelte components',
+    date: '02/17/2021',
+    path: '/svelte/dynamic-imports',
+    loader: () => import('../Routes/DynamicImportsForSvelteComponents.svelte'),
+    external: '',
+  },
+  {
     title: 'Getting Value from End to End Tests',
     date: '02/03/2021',
     path: '/testing/getting-value-from-end-to-end-tests',

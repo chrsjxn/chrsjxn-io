@@ -20,7 +20,11 @@
   posts.forEach((post, i) => {
     router(post.path, async () => {
       nextPost = posts[i + 1]
-      page = (await post.loader()).default
+      try {
+        page = (await post.loader()).default
+      } catch (err) {
+        page = Error404
+      }
     })
   })
 
