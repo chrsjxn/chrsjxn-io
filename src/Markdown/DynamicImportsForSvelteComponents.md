@@ -1,5 +1,7 @@
 # Building a blog with Svelte: Dynamic imports For Svelte components
 
+02/17/2021
+
 [Dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports) are a really powerful JavaScript feature. Loading modules only when needed can significantly speed up the initial load of a single page application.
 
 There is a cost, of course. Loading pages that aren't included in your initial bundle will be slower. But if you pick less popular pages to dynamically import—like account settings—most of your users will never have to pay that cost!
