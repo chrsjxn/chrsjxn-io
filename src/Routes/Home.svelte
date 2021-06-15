@@ -1,9 +1,10 @@
 <script>
   import { Layout, Link } from '../Components'
   import { posts } from '../Modules/posts'
+
 </script>
 
-<style>
+<style global>
   li {
     list-style-position: outside;
     line-height: 2em;
@@ -12,6 +13,7 @@
   li.post {
     list-style-type: '📓 ';
   }
+
 </style>
 
 <Layout>

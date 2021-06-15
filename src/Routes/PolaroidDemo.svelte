@@ -4,9 +4,10 @@
   import markdown from '../Markdown/PolaroidDemo.md'
 
   export let nextPost = null
+
 </script>
 
-<style>
+<style global>
   .demo-container {
     display: flex;
     flex-direction: row-reverse;
@@ -14,6 +15,7 @@
     justify-content: center;
     margin-bottom: 20px;
   }
+
 </style>
 
 <Layout>
