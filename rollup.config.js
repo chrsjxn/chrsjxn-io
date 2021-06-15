@@ -7,6 +7,7 @@ import replace from '@rollup/plugin-replace'
 import { string } from 'rollup-plugin-string'
 import json from '@rollup/plugin-json'
 import styles from 'rollup-plugin-styles'
+import globalStyles from './globalStyles'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -55,6 +56,7 @@ export default {
   plugins: [
     replace({
       __img_path__: production ? 'cloudinary' : 'images',
+      preventAssignment: true,
     }),
 
     svelte({
@@ -65,6 +67,7 @@ export default {
       css: (css) => {
         css.write('bundle.css')
       },
+      preprocess: [globalStyles],
     }),
 
     // If you have external dependencies installed from
