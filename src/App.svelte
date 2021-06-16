@@ -61,9 +61,9 @@
 
   .full {
     --primary-color: hsl(110, 10%, 5%);
-    --accent-color: hsl(35, 100%, 35%);
+    --accent-color: hsl(10, 100%, 35%);
     --accent-color-2: hsl(10, 100%, 35%);
-    --background-color: hsl(100, 10%, 95%);
+    --background-color: hsl(100, 5%, 95%);
   }
 
   .terminal {
@@ -126,11 +126,13 @@
 
   code {
     color: var(--accent-color);
+    font-weight: 700;
   }
 
   pre code,
   a code {
     color: inherit;
+    font-weight: inherit;
   }
 
   p {
