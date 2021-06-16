@@ -52,6 +52,7 @@ export default {
         return 'components'
       }
     },
+    chunkFileNames: `[name]${production ? '-[hash]' : ''}.js`,
   },
   plugins: [
     replace({
