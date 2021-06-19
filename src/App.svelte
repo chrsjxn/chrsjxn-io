@@ -52,6 +52,16 @@
     background-color: var(--background-color);
   }
 
+  html {
+    font-size: 14px;
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 10px;
+    }
+  }
+
   .new {
     --background-color: hsl(230, 100%, 5%);
     --accent-color: hsl(285, 100%, 65%);
