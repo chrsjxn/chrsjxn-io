@@ -8,6 +8,7 @@ import { string } from 'rollup-plugin-string'
 import json from '@rollup/plugin-json'
 import styles from 'rollup-plugin-styles'
 import globalStyles from './globalStyles'
+import visualizer from 'rollup-plugin-visualizer'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -99,6 +100,7 @@ export default {
     // If we're building for production (npm run build
     // instead of npm run dev), minify
     production && terser(),
+    visualizer(),
   ],
   watch: {
     clearScreen: false,
