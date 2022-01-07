@@ -157,6 +157,10 @@
     padding-left: 1rem;
   }
 
+  img {
+    max-width: 100%;
+  }
+
 </style>
 
 <svelte:component this={page} {nextPost} />
